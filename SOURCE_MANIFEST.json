@@ -10,6 +10,41 @@
     "bytes": 159
   },
   {
+    "path": "README.md",
+    "sha256": "05740e45ebc98a5625d0b5733659392a3c86feb91245be921d9eeea10af8cd8f",
+    "bytes": 8142
+  },
+  {
+    "path": "docs/media/SpanWitness-architecture.png",
+    "sha256": "479f8266ac108771aa0bdde4674e565e7cb0c20d31151c3b3fb438c1f017c42d",
+    "bytes": 195140
+  },
+  {
+    "path": "docs/media/SpanWitness-cover.png",
+    "sha256": "ce06568134b593b7739e34fe9a58509bf103098a9b33b172514ed4c457215b58",
+    "bytes": 2136060
+  },
+  {
+    "path": "docs/media/history-change.jpg",
+    "sha256": "6003ca181f5b3af6492f6959e881d2cd2e5f554e42b04622bf7a5433eee35aa1",
+    "bytes": 104142
+  },
+  {
+    "path": "docs/media/history-pair.jpg",
+    "sha256": "dd7c8b7cf7ca0ab2ba4fb6c8c01bd2c175cf77d840ad184d2f05e54dc8b6921c",
+    "bytes": 135686
+  },
+  {
+    "path": "docs/media/opening.jpg",
+    "sha256": "df5cdb0f263b964ab37c6e6c386c8ec422ac7ec719628497fd7840c639ae58c9",
+    "bytes": 97818
+  },
+  {
+    "path": "docs/media/review-queue.jpg",
+    "sha256": "51579f647a9658454b42793fc22bdfb423b385628a817514c14df81c58e49edf",
+    "bytes": 91801
+  },
+  {
     "path": "spanwitness/CAPTURE_GUIDE.md",
     "sha256": "82c6271b0261cadff2a10af45472cdcb607f4e0b562743b4a7e3f1f00dc96311",
     "bytes": 1593
@@ -21,8 +56,8 @@
   },
   {
     "path": "spanwitness/DEPLOYMENT.md",
-    "sha256": "595508e1073bc555a4cbc028a7c41856c9b6545e6e3b0c1f8d8a595aaf327d73",
-    "bytes": 6316
+    "sha256": "311b95ecdf1b2cc459230f5ad739eac4cc94a98801ce0bc6590dfa7442b3ee49",
+    "bytes": 6356
   },
   {
     "path": "spanwitness/Dockerfile",
@@ -140,6 +175,11 @@
     "bytes": 2456
   },
   {
+    "path": "spanwitness/reports/STORY_RELEASE.md",
+    "sha256": "d809f55ed134a3650bfe8b8bd99e97fc35291467a5ec31d31a36f0bc87494053",
+    "bytes": 1138
+  },
+  {
     "path": "spanwitness/reports/VALIDATION.md",
     "sha256": "9592d474a1ae6717567ac2f1aec52efba2d1292a6994195deb95040ceb1163e6",
     "bytes": 5321
@@ -153,6 +193,11 @@
     "path": "spanwitness/reports/aws-live-receipt.json",
     "sha256": "6312a992f7b2e0cd03856fdd73108d746c18d1290380a1b7dcfcf2a3bdffa8cc",
     "bytes": 3791
+  },
+  {
+    "path": "spanwitness/reports/aws-story-live-receipt.json",
+    "sha256": "859bea35eb3fbd552d614d44c4b0a814bb052ca412d2bf1c103789c28b9392a4",
+    "bytes": 5483
   },
   {
     "path": "spanwitness/reports/baseline-EVALUATION.md",
@@ -338,10 +383,5 @@
     "path": "spanwitness/weather.py",
     "sha256": "b8b5947425d8741f110509e7adcbb0fc3e415e6a700c4c2334fdeb89ac1998ef",
     "bytes": 1889
-  },
-  {
-    "path": "README.md",
-    "sha256": "20af8ed4a70a150e79c4e9e3c9a439521a97987b3b274d826592922f75d5d555",
-    "bytes": 232
   }
 ]

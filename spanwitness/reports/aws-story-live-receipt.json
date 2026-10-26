@@ -1,0 +1,216 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-26T05:24:19.666670+00:00",
+  "preview_url": "https://ec1f3mu6m7.execute-api.us-west-2.amazonaws.com",
+  "health": {
+    "status": "ok",
+    "app_version": "0.2.1",
+    "opencv": "5.0.0",
+    "storage": "aws_s3_dynamodb",
+    "dispatch": "review_queue_only",
+    "model": "classical_cv_with_bounded_policy"
+  },
+  "assets_sha256": {
+    "app.js": "08b871c3b458c5ba96bb41eb95e0a0931954773519041cae476af08595e7021f",
+    "history.js": "9b53c63959548bbc2e6d86f3b9f0fc0e06e06716a143a3320e99eb04d99dca07",
+    "style.css": "c77478c02059cc047e136fd55dcb71dcb4d7d982d4c3ca468bfae2a8a9e0607b"
+  },
+  "observations": {
+    "gap": "5be5bf52dbc24725bdeee83bd73718a3",
+    "first_view": "214b2c52b7ef41b2a23c6b4c6fba21b5",
+    "second_view": "fe1aea6323b741ff9d96720e9a18281e"
+  },
+  "second_view_status": "projection_sensitive",
+  "history": [
+    {
+      "case": "alignment-change",
+      "status": "change_detected",
+      "change_deg": 4.95,
+      "comparison_id": "e4018f8e669b4b418485831096338850",
+      "baseline_id": "849b04355d6b4a3cbfb56eb113bd9719",
+      "current_id": "62e9dbbcc5b047ebb55dccadefd25398"
+    },
+    {
+      "case": "camera-roll",
+      "status": "no_material_change",
+      "change_deg": 0.0,
+      "comparison_id": "a67a6708589f4cbfa4da86b8e4033f21",
+      "baseline_id": "c8c5e798cb68420d851901fef5d7aae4",
+      "current_id": "677a2ef74e2e4deaad6d12c86596e9bf"
+    }
+  ],
+  "checks": [
+    "unauthenticated request rejected",
+    "real OpenCV 5 on Lambda",
+    "S3 image and overlay readback",
+    "DynamoDB record readback",
+    "evidence export",
+    "measurement-driven second-view decision",
+    "frontend assets match tested source",
+    "pole history change and camera-roll control",
+    "comparison export and DynamoDB history persistence"
+  ],
+  "calls": [
+    {
+      "path": "/api/health",
+      "authenticated": false,
+      "status": 401
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "elapsed_ms": 1917.0
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "elapsed_ms": 35.9
+    },
+    {
+      "path": "/static/app.js",
+      "status": 200,
+      "elapsed_ms": 35.1
+    },
+    {
+      "path": "/static/history.js",
+      "status": 200,
+      "elapsed_ms": 28.5
+    },
+    {
+      "path": "/static/style.css",
+      "status": 200,
+      "elapsed_ms": 39.8
+    },
+    {
+      "path": "/api/examples",
+      "status": 200,
+      "elapsed_ms": 509.8
+    },
+    {
+      "path": "/api/examples/gap/image",
+      "status": 200,
+      "elapsed_ms": 45.4
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 413.0
+    },
+    {
+      "path": "/api/observations/5be5bf52dbc24725bdeee83bd73718a3/image",
+      "status": 200,
+      "elapsed_ms": 72.0
+    },
+    {
+      "path": "/api/observations/5be5bf52dbc24725bdeee83bd73718a3/image?overlay=true",
+      "status": 200,
+      "elapsed_ms": 62.7
+    },
+    {
+      "path": "/api/observations/5be5bf52dbc24725bdeee83bd73718a3/export",
+      "status": 200,
+      "elapsed_ms": 32.2
+    },
+    {
+      "path": "/api/examples/perspective/image?view=1",
+      "status": 200,
+      "elapsed_ms": 127.7
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 146.3
+    },
+    {
+      "path": "/api/examples/perspective/image?view=2",
+      "status": 200,
+      "elapsed_ms": 99.2
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 373.2
+    },
+    {
+      "path": "/api/observations/fe1aea6323b741ff9d96720e9a18281e",
+      "status": 200,
+      "elapsed_ms": 37.7
+    },
+    {
+      "path": "/api/history/examples",
+      "status": 200,
+      "elapsed_ms": 178.1
+    },
+    {
+      "path": "/api/history/examples/alignment-change/image?view=baseline",
+      "status": 200,
+      "elapsed_ms": 40.5
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 201.8
+    },
+    {
+      "path": "/api/history/examples/alignment-change/image?view=current",
+      "status": 200,
+      "elapsed_ms": 39.9
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 196.0
+    },
+    {
+      "path": "/api/history/compare",
+      "status": 200,
+      "elapsed_ms": 543.1
+    },
+    {
+      "path": "/api/history/comparisons/e4018f8e669b4b418485831096338850/export",
+      "status": 200,
+      "elapsed_ms": 39.5
+    },
+    {
+      "path": "/api/assets/history?asset_id=AWS%20history%20smoke%3A%20alignment-change",
+      "status": 200,
+      "elapsed_ms": 68.8
+    },
+    {
+      "path": "/api/history/examples/camera-roll/image?view=baseline",
+      "status": 200,
+      "elapsed_ms": 37.7
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 252.2
+    },
+    {
+      "path": "/api/history/examples/camera-roll/image?view=current",
+      "status": 200,
+      "elapsed_ms": 35.6
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 195.8
+    },
+    {
+      "path": "/api/history/compare",
+      "status": 200,
+      "elapsed_ms": 299.1
+    },
+    {
+      "path": "/api/history/comparisons/a67a6708589f4cbfa4da86b8e4033f21/export",
+      "status": 200,
+      "elapsed_ms": 34.3
+    },
+    {
+      "path": "/api/assets/history?asset_id=AWS%20history%20smoke%3A%20camera-roll",
+      "status": 200,
+      "elapsed_ms": 44.7
+    }
+  ],
+  "limits": "Synthetic workflow verification. No field-accuracy score or browser-login verification is implied."
+}

@@ -1,6 +1,6 @@
 # AWS deployment
 
-Status: the private preview is deployed in the owner's personal account in `us-west-2`. CloudFormation completed and the live OpenCV, S3 and DynamoDB checks passed on October 25, 2026, Pacific Time. The current release is 0.2.0, with the asset-history extension. See [live verification](reports/AWS_LIVE.md) and [the history release receipt](reports/HISTORY_RELEASE.md).
+Status: the private preview is deployed in the owner's personal account in `us-west-2`. CloudFormation completed and the live OpenCV, S3 and DynamoDB checks passed on October 25, 2026, Pacific Time. The current runtime is 0.2.1. It includes the asset-history extension and a problem-first opening page. See [live verification](reports/AWS_LIVE.md) and [the history release receipt](reports/HISTORY_RELEASE.md).
 
 Preview: https://ec1f3mu6m7.execute-api.us-west-2.amazonaws.com
 
