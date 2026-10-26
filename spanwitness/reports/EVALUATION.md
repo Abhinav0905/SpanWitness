@@ -1,12 +1,12 @@
 # Evaluation
 
-Generated: 2026-10-26T04:41:01.697191+00:00
+Generated: 2026-10-26T06:51:06.495682+00:00
 
 OpenCV 5.0.0; Python 3.14.7; arm64.
 
 - Synthetic screening checks: 144/144.
 - Synthetic second-view checks: 36/36.
-- Local screening time: median 14.6 ms; maximum 41.8 ms.
+- Local screening time: median 15.1 ms; maximum 37.1 ms.
 
 ## Limits
 

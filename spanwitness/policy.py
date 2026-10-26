@@ -51,6 +51,9 @@ def plan_review(report: dict, weather: dict | None = None, comparison: dict | No
         trace.append({"tool": "request_engineering_review", "result": "Possible gap or occlusion; include a detailed crop and operator confirmation."})
     if codes & {"span_unverified", "alignment_unverified"} or not report["quality"]["usable"]:
         priority, label, action = "unassessed", "More evidence needed", "Capture a clearer view or mark the conductor again"
+        if report.get("inspection_mode") == "pole_alignment":
+            team = "Asset inspection"
+            action = "Capture a clearer pole view and mark continuous pole and reference edges"
         reason = "The observation is insufficient. An absence of detections cannot lower the review priority."
         trace.append({"tool": "request_observation", "result": "Do not issue a low-priority asset conclusion from this frame."})
     if prior_plan and prior_plan["priority"] == "critical_review":

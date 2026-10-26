@@ -20,5 +20,31 @@
     "license": "CC BY-SA 2.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
     "sha256": "e2a6ccac232ddca8ac44d1e6192d839fe2db0bb44fedf63e477d844c63eaf6b8"
+  },
+  {
+    "id": "field-house",
+    "file": "field-house.jpg",
+    "url": "https://huggingface.co/datasets/EPDCL/pd-defect/resolve/b9c64b2f9615ef5ade71fceade7d9d31b0dc9416/pole_lean_assessment/classification/val/Leaned/713.jpg",
+    "source": "https://huggingface.co/datasets/EPDCL/pd-defect",
+    "author": "Sampath Balaji Masabathula, Srija Vanapalli, Gangadhar Kanchi, Sreenivasa Rao V.A.N, Vijaya Lalitha V and Sasank Chilamkurthy",
+    "title": "PD-Defect field pole photograph 713",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "sha256": "42ccb83d5cf0a90894458afe956d297ecbba2586660ce38162634121e96328f9",
+    "changes": "Original JPEG copied byte-for-byte, no EXIF present. App displays separate operator marks and produces an annotated derivative. Publisher condition labels are not analysis inputs.",
+    "scope": "Selected demonstration image, not a blind evaluation or a physical lean measurement."
+  },
+  {
+    "id": "field-warehouse",
+    "file": "field-warehouse.jpg",
+    "url": "https://huggingface.co/datasets/EPDCL/pd-defect/resolve/b9c64b2f9615ef5ade71fceade7d9d31b0dc9416/pole_lean_assessment/classification/val/Straight/1005.jpg",
+    "source": "https://huggingface.co/datasets/EPDCL/pd-defect",
+    "author": "Sampath Balaji Masabathula, Srija Vanapalli, Gangadhar Kanchi, Sreenivasa Rao V.A.N, Vijaya Lalitha V and Sasank Chilamkurthy",
+    "title": "PD-Defect field pole photograph 1005",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "sha256": "a35238f28d2e37ff2555e2e04476fbe7db9c97e4fab25aa5e52e4decd8a8b7b5",
+    "changes": "Original JPEG copied byte-for-byte, no EXIF present. App displays separate operator marks and produces an annotated derivative. Publisher condition labels are not analysis inputs.",
+    "scope": "Selected demonstration image, not a blind evaluation or a physical lean measurement."
   }
 ]

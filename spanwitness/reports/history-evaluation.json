@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T04:41:50.226487+00:00",
+  "generated_at": "2026-10-26T06:51:40.447371+00:00",
   "opencv": "5.0.0",
   "checks": {
     "passed": 108,
@@ -25,7 +25,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 169.0,
+      "elapsed_ms": 181.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -55,7 +55,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.04,
-      "elapsed_ms": 55.8,
+      "elapsed_ms": 59.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -85,7 +85,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 60.6,
+      "elapsed_ms": 61.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -110,7 +110,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 34.2,
+      "elapsed_ms": 38.9,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -134,7 +134,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.07,
-      "elapsed_ms": 52.8,
+      "elapsed_ms": 105.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -164,7 +164,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.01,
-      "elapsed_ms": 53.2,
+      "elapsed_ms": 54.6,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -194,7 +194,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 51.5,
+      "elapsed_ms": 57.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -219,7 +219,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 24.0,
+      "elapsed_ms": 27.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -243,7 +243,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 51.0,
+      "elapsed_ms": 52.6,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -273,7 +273,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.37,
-      "elapsed_ms": 51.9,
+      "elapsed_ms": 54.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -303,7 +303,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 52.1,
+      "elapsed_ms": 53.6,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -328,7 +328,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 23.8,
+      "elapsed_ms": 25.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -352,7 +352,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.07,
-      "elapsed_ms": 79.3,
+      "elapsed_ms": 80.8,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -382,7 +382,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 78.6,
+      "elapsed_ms": 77.6,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -412,7 +412,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 74.4,
+      "elapsed_ms": 84.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -437,7 +437,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 41.2,
+      "elapsed_ms": 97.6,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -461,7 +461,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 80.0,
+      "elapsed_ms": 97.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -491,7 +491,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.01,
-      "elapsed_ms": 78.3,
+      "elapsed_ms": 86.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -521,7 +521,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 82.6,
+      "elapsed_ms": 82.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -546,7 +546,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 41.5,
+      "elapsed_ms": 41.8,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -570,7 +570,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 77.7,
+      "elapsed_ms": 78.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -600,7 +600,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 77.5,
+      "elapsed_ms": 79.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -630,7 +630,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 79.0,
+      "elapsed_ms": 78.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -655,7 +655,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 40.4,
+      "elapsed_ms": 40.9,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -679,7 +679,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 121.7,
+      "elapsed_ms": 119.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -739,7 +739,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 124.9,
+      "elapsed_ms": 123.5,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -764,7 +764,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 73.7,
+      "elapsed_ms": 72.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -788,7 +788,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 117.7,
+      "elapsed_ms": 116.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -818,7 +818,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.01,
-      "elapsed_ms": 129.2,
+      "elapsed_ms": 132.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -848,7 +848,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 117.6,
+      "elapsed_ms": 117.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -873,7 +873,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 72.5,
+      "elapsed_ms": 76.9,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -897,7 +897,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.05,
-      "elapsed_ms": 115.0,
+      "elapsed_ms": 126.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -927,7 +927,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 116.3,
+      "elapsed_ms": 130.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -957,7 +957,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 119.3,
+      "elapsed_ms": 121.5,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -982,7 +982,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 72.9,
+      "elapsed_ms": 77.9,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1006,7 +1006,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 53.9,
+      "elapsed_ms": 58.9,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -1036,7 +1036,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.04,
-      "elapsed_ms": 55.6,
+      "elapsed_ms": 56.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -1066,7 +1066,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 54.7,
+      "elapsed_ms": 57.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1091,7 +1091,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 33.5,
+      "elapsed_ms": 34.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1115,7 +1115,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.07,
-      "elapsed_ms": 49.4,
+      "elapsed_ms": 50.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -1145,7 +1145,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.03,
-      "elapsed_ms": 49.1,
+      "elapsed_ms": 52.6,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -1175,7 +1175,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 48.3,
+      "elapsed_ms": 50.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1200,7 +1200,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 23.9,
+      "elapsed_ms": 23.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1224,7 +1224,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 51.5,
+      "elapsed_ms": 51.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -1254,7 +1254,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.05,
-      "elapsed_ms": 50.6,
+      "elapsed_ms": 50.8,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -1284,7 +1284,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 51.2,
+      "elapsed_ms": 51.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1333,7 +1333,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.05,
-      "elapsed_ms": 76.9,
+      "elapsed_ms": 75.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -1363,7 +1363,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.01,
-      "elapsed_ms": 76.5,
+      "elapsed_ms": 75.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -1393,7 +1393,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 73.2,
+      "elapsed_ms": 78.6,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1418,7 +1418,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 39.2,
+      "elapsed_ms": 41.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1442,7 +1442,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 74.3,
+      "elapsed_ms": 77.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -1472,7 +1472,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 75.5,
+      "elapsed_ms": 75.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -1502,7 +1502,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 77.0,
+      "elapsed_ms": 77.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1527,7 +1527,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 43.9,
+      "elapsed_ms": 41.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1551,7 +1551,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 78.1,
+      "elapsed_ms": 76.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -1581,7 +1581,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 74.4,
+      "elapsed_ms": 79.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -1611,7 +1611,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 79.8,
+      "elapsed_ms": 77.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1636,7 +1636,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 41.0,
+      "elapsed_ms": 43.9,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1660,7 +1660,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 119.7,
+      "elapsed_ms": 125.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -1690,7 +1690,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 115.6,
+      "elapsed_ms": 121.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -1720,7 +1720,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 114.1,
+      "elapsed_ms": 114.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1745,7 +1745,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 76.2,
+      "elapsed_ms": 74.8,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1769,7 +1769,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.05,
-      "elapsed_ms": 142.0,
+      "elapsed_ms": 120.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -1799,7 +1799,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 138.8,
+      "elapsed_ms": 126.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -1829,7 +1829,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 115.2,
+      "elapsed_ms": 121.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1854,7 +1854,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 73.7,
+      "elapsed_ms": 84.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1878,7 +1878,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 116.8,
+      "elapsed_ms": 146.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -1908,7 +1908,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 121.4,
+      "elapsed_ms": 126.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -1938,7 +1938,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 118.8,
+      "elapsed_ms": 121.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1963,7 +1963,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 71.7,
+      "elapsed_ms": 77.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -1987,7 +1987,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 54.2,
+      "elapsed_ms": 58.5,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -2017,7 +2017,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.01,
-      "elapsed_ms": 55.6,
+      "elapsed_ms": 57.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -2047,7 +2047,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 54.6,
+      "elapsed_ms": 55.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2072,7 +2072,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 32.8,
+      "elapsed_ms": 36.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2096,7 +2096,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.07,
-      "elapsed_ms": 50.5,
+      "elapsed_ms": 75.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -2126,7 +2126,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.07,
-      "elapsed_ms": 52.1,
+      "elapsed_ms": 51.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -2156,7 +2156,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 50.9,
+      "elapsed_ms": 52.9,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2181,7 +2181,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 24.1,
+      "elapsed_ms": 24.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2205,7 +2205,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 50.5,
+      "elapsed_ms": 53.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -2235,7 +2235,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.59,
-      "elapsed_ms": 52.0,
+      "elapsed_ms": 55.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -2265,7 +2265,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 55.2,
+      "elapsed_ms": 54.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2290,7 +2290,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 30.0,
+      "elapsed_ms": 25.9,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2314,7 +2314,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.07,
-      "elapsed_ms": 89.0,
+      "elapsed_ms": 82.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -2344,7 +2344,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 79.9,
+      "elapsed_ms": 86.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -2374,7 +2374,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 78.6,
+      "elapsed_ms": 139.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2399,7 +2399,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 40.6,
+      "elapsed_ms": 69.6,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2423,7 +2423,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 76.4,
+      "elapsed_ms": 152.4,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -2453,7 +2453,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.01,
-      "elapsed_ms": 79.7,
+      "elapsed_ms": 124.9,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -2483,7 +2483,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 77.0,
+      "elapsed_ms": 118.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2508,7 +2508,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 40.5,
+      "elapsed_ms": 69.8,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2532,7 +2532,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.05,
-      "elapsed_ms": 75.2,
+      "elapsed_ms": 163.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -2562,7 +2562,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 83.5,
+      "elapsed_ms": 186.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -2592,7 +2592,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 77.1,
+      "elapsed_ms": 84.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2617,7 +2617,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 39.7,
+      "elapsed_ms": 48.8,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2641,7 +2641,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 114.8,
+      "elapsed_ms": 121.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -2671,7 +2671,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 121.4,
+      "elapsed_ms": 136.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -2701,7 +2701,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 124.1,
+      "elapsed_ms": 189.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2726,7 +2726,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 74.3,
+      "elapsed_ms": 166.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2750,7 +2750,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 118.9,
+      "elapsed_ms": 155.0,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -2780,7 +2780,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.0,
-      "elapsed_ms": 120.6,
+      "elapsed_ms": 163.1,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -2810,7 +2810,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 116.2,
+      "elapsed_ms": 127.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2835,7 +2835,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 75.9,
+      "elapsed_ms": 79.3,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2859,7 +2859,7 @@
       "expected_status": "change_detected",
       "passed": true,
       "apparent_change_error_deg": 0.06,
-      "elapsed_ms": 120.9,
+      "elapsed_ms": 127.7,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "change_detected",
@@ -2889,7 +2889,7 @@
       "expected_status": "no_material_change",
       "passed": true,
       "apparent_change_error_deg": 0.03,
-      "elapsed_ms": 116.9,
+      "elapsed_ms": 146.2,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "no_material_change",
@@ -2919,7 +2919,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 117.6,
+      "elapsed_ms": 132.6,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",
@@ -2944,7 +2944,7 @@
       "expected_status": "not_comparable",
       "passed": true,
       "apparent_change_error_deg": null,
-      "elapsed_ms": 73.1,
+      "elapsed_ms": 77.8,
       "comparison": {
         "method_version": "pole-history-v1",
         "status": "not_comparable",

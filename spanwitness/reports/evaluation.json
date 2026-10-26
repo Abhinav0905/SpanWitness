@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T04:41:01.697191+00:00",
+  "generated_at": "2026-10-26T06:51:06.495682+00:00",
   "opencv": "5.0.0",
   "python": "3.14.7",
   "machine": "arm64",
@@ -13,8 +13,8 @@
     "total": 36
   },
   "screening_latency_ms": {
-    "median": 14.6,
-    "max": 41.8
+    "median": 15.1,
+    "max": 37.1
   },
   "limits": [
     "Procedural image variations share scene geometry; these are regression and stress checks, not independent field data.",
@@ -31,7 +31,7 @@
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 8.1
+      "processing_ms": 9.6
     },
     {
       "case": "perspective",
@@ -41,7 +41,7 @@
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 6.9
+      "processing_ms": 8.5
     },
     {
       "case": "perspective",
@@ -51,190 +51,10 @@
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 14.4
+      "processing_ms": 16.0
     },
     {
       "case": "perspective",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 14.8
-    },
-    {
-      "case": "perspective",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 18.4
-    },
-    {
-      "case": "perspective",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 18.7
-    },
-    {
-      "case": "perspective",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 7.1
-    },
-    {
-      "case": "perspective",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 7.1
-    },
-    {
-      "case": "perspective",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 13.7
-    },
-    {
-      "case": "perspective",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 13.6
-    },
-    {
-      "case": "perspective",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 18.6
-    },
-    {
-      "case": "perspective",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 18.4
-    },
-    {
-      "case": "perspective",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 7.7
-    },
-    {
-      "case": "perspective",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 7.2
-    },
-    {
-      "case": "perspective",
-      "seed": 309,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 13.9
-    },
-    {
-      "case": "perspective",
-      "seed": 309,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 14.5
-    },
-    {
-      "case": "perspective",
-      "seed": 309,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 21.2
-    },
-    {
-      "case": "perspective",
-      "seed": 309,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 20.0
-    },
-    {
-      "case": "persistent",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 7.6
-    },
-    {
-      "case": "persistent",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 7.7
-    },
-    {
-      "case": "persistent",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 14.4
-    },
-    {
-      "case": "persistent",
       "seed": 71,
       "scale": 1,
       "jpeg_quality": 88,
@@ -244,18 +64,78 @@
       "processing_ms": 14.7
     },
     {
-      "case": "persistent",
+      "case": "perspective",
       "seed": 71,
       "scale": 1.2,
       "jpeg_quality": 65,
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 20.2
+      "processing_ms": 23.4
     },
     {
-      "case": "persistent",
+      "case": "perspective",
       "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 21.7
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 8.4
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.8
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.4
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.0
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 19.2
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
       "scale": 1.2,
       "jpeg_quality": 88,
       "expected_priority": "major",
@@ -264,58 +144,58 @@
       "processing_ms": 20.2
     },
     {
-      "case": "persistent",
-      "seed": 208,
+      "case": "perspective",
+      "seed": 309,
       "scale": 0.7,
       "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 7.7
-    },
-    {
-      "case": "persistent",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 88,
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
       "processing_ms": 7.6
     },
     {
-      "case": "persistent",
-      "seed": 208,
+      "case": "perspective",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.5
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
       "scale": 1,
       "jpeg_quality": 65,
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 14.3
+      "processing_ms": 19.2
     },
     {
-      "case": "persistent",
-      "seed": 208,
+      "case": "perspective",
+      "seed": 309,
       "scale": 1,
       "jpeg_quality": 88,
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 15.0
+      "processing_ms": 14.2
     },
     {
-      "case": "persistent",
-      "seed": 208,
+      "case": "perspective",
+      "seed": 309,
       "scale": 1.2,
       "jpeg_quality": 65,
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 20.2
+      "processing_ms": 19.6
     },
     {
-      "case": "persistent",
-      "seed": 208,
+      "case": "perspective",
+      "seed": 309,
       "scale": 1.2,
       "jpeg_quality": 88,
       "expected_priority": "major",
@@ -325,27 +205,27 @@
     },
     {
       "case": "persistent",
-      "seed": 309,
+      "seed": 71,
       "scale": 0.7,
       "jpeg_quality": 65,
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 7.8
+      "processing_ms": 7.6
     },
     {
       "case": "persistent",
-      "seed": 309,
+      "seed": 71,
       "scale": 0.7,
       "jpeg_quality": 88,
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 7.7
+      "processing_ms": 7.3
     },
     {
       "case": "persistent",
-      "seed": 309,
+      "seed": 71,
       "scale": 1,
       "jpeg_quality": 65,
       "expected_priority": "major",
@@ -355,6 +235,126 @@
     },
     {
       "case": "persistent",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 13.8
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 18.8
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 18.7
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.2
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.5
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.7
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 15.7
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 21.3
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 20.3
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.5
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.5
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.8
+    },
+    {
+      "case": "persistent",
       "seed": 309,
       "scale": 1,
       "jpeg_quality": 88,
@@ -371,7 +371,7 @@
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 20.4
+      "processing_ms": 21.5
     },
     {
       "case": "persistent",
@@ -381,7 +381,7 @@
       "expected_priority": "major",
       "actual_priority": "major",
       "passed": true,
-      "processing_ms": 19.1
+      "processing_ms": 20.9
     },
     {
       "case": "gap",
@@ -391,11 +391,131 @@
       "expected_priority": "critical_review",
       "actual_priority": "critical_review",
       "passed": true,
-      "processing_ms": 7.5
+      "processing_ms": 8.6
     },
     {
       "case": "gap",
       "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 7.6
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 15.9
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 18.1
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 22.1
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 21.0
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 8.3
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 9.0
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 15.5
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 16.2
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 22.2
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 20.5
+    },
+    {
+      "case": "gap",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 7.6
+    },
+    {
+      "case": "gap",
+      "seed": 309,
       "scale": 0.7,
       "jpeg_quality": 88,
       "expected_priority": "critical_review",
@@ -405,79 +525,9 @@
     },
     {
       "case": "gap",
-      "seed": 71,
+      "seed": 309,
       "scale": 1,
       "jpeg_quality": 65,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 14.2
-    },
-    {
-      "case": "gap",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 14.3
-    },
-    {
-      "case": "gap",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 19.8
-    },
-    {
-      "case": "gap",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 19.2
-    },
-    {
-      "case": "gap",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 7.3
-    },
-    {
-      "case": "gap",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 7.3
-    },
-    {
-      "case": "gap",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 13.4
-    },
-    {
-      "case": "gap",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 88,
       "expected_priority": "critical_review",
       "actual_priority": "critical_review",
       "passed": true,
@@ -485,295 +535,245 @@
     },
     {
       "case": "gap",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 18.4
-    },
-    {
-      "case": "gap",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 18.1
-    },
-    {
-      "case": "gap",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 7.4
-    },
-    {
-      "case": "gap",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 7.1
-    },
-    {
-      "case": "gap",
-      "seed": 309,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 13.3
-    },
-    {
-      "case": "gap",
       "seed": 309,
       "scale": 1,
       "jpeg_quality": 88,
       "expected_priority": "critical_review",
       "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 13.4
-    },
-    {
-      "case": "gap",
-      "seed": 309,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 18.2
-    },
-    {
-      "case": "gap",
-      "seed": 309,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "critical_review",
-      "actual_priority": "critical_review",
-      "passed": true,
-      "processing_ms": 18.5
-    },
-    {
-      "case": "cover",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 7.2
-    },
-    {
-      "case": "cover",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 7.2
-    },
-    {
-      "case": "cover",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 13.7
-    },
-    {
-      "case": "cover",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 13.7
-    },
-    {
-      "case": "cover",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 19.0
-    },
-    {
-      "case": "cover",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 19.0
-    },
-    {
-      "case": "cover",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 7.5
-    },
-    {
-      "case": "cover",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 7.3
-    },
-    {
-      "case": "cover",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 13.9
-    },
-    {
-      "case": "cover",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 14.4
-    },
-    {
-      "case": "cover",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 19.1
-    },
-    {
-      "case": "cover",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 19.6
-    },
-    {
-      "case": "cover",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 7.3
-    },
-    {
-      "case": "cover",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 7.2
-    },
-    {
-      "case": "cover",
-      "seed": 309,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 13.8
-    },
-    {
-      "case": "cover",
-      "seed": 309,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 14.2
-    },
-    {
-      "case": "cover",
-      "seed": 309,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 18.6
-    },
-    {
-      "case": "cover",
-      "seed": 309,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "moderate",
-      "actual_priority": "moderate",
-      "passed": true,
-      "processing_ms": 18.7
-    },
-    {
-      "case": "clear",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 7.0
-    },
-    {
-      "case": "clear",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 7.1
-    },
-    {
-      "case": "clear",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
       "passed": true,
       "processing_ms": 14.0
     },
     {
+      "case": "gap",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 18.8
+    },
+    {
+      "case": "gap",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 19.4
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.8
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.6
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 14.1
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 14.1
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 20.0
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 20.9
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.8
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.4
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 14.0
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 14.3
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 19.4
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 20.3
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 8.2
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.9
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 15.3
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 15.4
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 20.7
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 20.7
+    },
+    {
+      "case": "clear",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 7.8
+    },
+    {
+      "case": "clear",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 7.4
+    },
+    {
+      "case": "clear",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 14.5
+    },
+    {
       "case": "clear",
       "seed": 71,
       "scale": 1,
@@ -781,7 +781,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 13.7
+      "processing_ms": 14.5
     },
     {
       "case": "clear",
@@ -791,13 +791,103 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 18.7
+      "processing_ms": 19.8
     },
     {
       "case": "clear",
       "seed": 71,
       "scale": 1.2,
       "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 19.7
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 9.4
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 8.6
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 14.6
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 15.1
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 19.9
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 20.3
+    },
+    {
+      "case": "clear",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 7.9
+    },
+    {
+      "case": "clear",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 8.1
+    },
+    {
+      "case": "clear",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
@@ -805,103 +895,13 @@
     },
     {
       "case": "clear",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 6.9
-    },
-    {
-      "case": "clear",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 6.8
-    },
-    {
-      "case": "clear",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 13.3
-    },
-    {
-      "case": "clear",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 13.5
-    },
-    {
-      "case": "clear",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 25.3
-    },
-    {
-      "case": "clear",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 41.6
-    },
-    {
-      "case": "clear",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 21.5
-    },
-    {
-      "case": "clear",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 11.5
-    },
-    {
-      "case": "clear",
-      "seed": 309,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 32.4
-    },
-    {
-      "case": "clear",
       "seed": 309,
       "scale": 1,
       "jpeg_quality": 88,
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 17.3
+      "processing_ms": 36.1
     },
     {
       "case": "clear",
@@ -911,7 +911,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 28.3
+      "processing_ms": 27.2
     },
     {
       "case": "clear",
@@ -921,7 +921,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 20.7
+      "processing_ms": 19.8
     },
     {
       "case": "blur",
@@ -931,7 +931,7 @@
       "expected_priority": "unassessed",
       "actual_priority": "unassessed",
       "passed": true,
-      "processing_ms": 14.1
+      "processing_ms": 7.4
     },
     {
       "case": "blur",
@@ -941,11 +941,71 @@
       "expected_priority": "unassessed",
       "actual_priority": "unassessed",
       "passed": true,
-      "processing_ms": 8.0
+      "processing_ms": 7.3
     },
     {
       "case": "blur",
       "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 13.9
+    },
+    {
+      "case": "blur",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 14.9
+    },
+    {
+      "case": "blur",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 20.3
+    },
+    {
+      "case": "blur",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 20.0
+    },
+    {
+      "case": "blur",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 7.9
+    },
+    {
+      "case": "blur",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 7.9
+    },
+    {
+      "case": "blur",
+      "seed": 208,
       "scale": 1,
       "jpeg_quality": 65,
       "expected_priority": "unassessed",
@@ -955,37 +1015,37 @@
     },
     {
       "case": "blur",
-      "seed": 71,
+      "seed": 208,
       "scale": 1,
       "jpeg_quality": 88,
       "expected_priority": "unassessed",
       "actual_priority": "unassessed",
       "passed": true,
-      "processing_ms": 14.7
+      "processing_ms": 15.1
     },
     {
       "case": "blur",
-      "seed": 71,
+      "seed": 208,
       "scale": 1.2,
       "jpeg_quality": 65,
       "expected_priority": "unassessed",
       "actual_priority": "unassessed",
       "passed": true,
-      "processing_ms": 19.4
+      "processing_ms": 21.0
     },
     {
       "case": "blur",
-      "seed": 71,
+      "seed": 208,
       "scale": 1.2,
       "jpeg_quality": 88,
       "expected_priority": "unassessed",
       "actual_priority": "unassessed",
       "passed": true,
-      "processing_ms": 22.2
+      "processing_ms": 20.4
     },
     {
       "case": "blur",
-      "seed": 208,
+      "seed": 309,
       "scale": 0.7,
       "jpeg_quality": 65,
       "expected_priority": "unassessed",
@@ -995,73 +1055,13 @@
     },
     {
       "case": "blur",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "unassessed",
-      "actual_priority": "unassessed",
-      "passed": true,
-      "processing_ms": 8.2
-    },
-    {
-      "case": "blur",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "unassessed",
-      "actual_priority": "unassessed",
-      "passed": true,
-      "processing_ms": 16.6
-    },
-    {
-      "case": "blur",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "unassessed",
-      "actual_priority": "unassessed",
-      "passed": true,
-      "processing_ms": 16.9
-    },
-    {
-      "case": "blur",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "unassessed",
-      "actual_priority": "unassessed",
-      "passed": true,
-      "processing_ms": 25.0
-    },
-    {
-      "case": "blur",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "unassessed",
-      "actual_priority": "unassessed",
-      "passed": true,
-      "processing_ms": 24.1
-    },
-    {
-      "case": "blur",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "unassessed",
-      "actual_priority": "unassessed",
-      "passed": true,
-      "processing_ms": 12.7
-    },
-    {
-      "case": "blur",
       "seed": 309,
       "scale": 0.7,
       "jpeg_quality": 88,
       "expected_priority": "unassessed",
       "actual_priority": "unassessed",
       "passed": true,
-      "processing_ms": 11.0
+      "processing_ms": 7.8
     },
     {
       "case": "blur",
@@ -1071,7 +1071,7 @@
       "expected_priority": "unassessed",
       "actual_priority": "unassessed",
       "passed": true,
-      "processing_ms": 16.2
+      "processing_ms": 13.9
     },
     {
       "case": "blur",
@@ -1081,7 +1081,7 @@
       "expected_priority": "unassessed",
       "actual_priority": "unassessed",
       "passed": true,
-      "processing_ms": 14.7
+      "processing_ms": 13.8
     },
     {
       "case": "blur",
@@ -1090,290 +1090,290 @@
       "jpeg_quality": 65,
       "expected_priority": "unassessed",
       "actual_priority": "unassessed",
-      "passed": true,
-      "processing_ms": 24.4
-    },
-    {
-      "case": "blur",
-      "seed": 309,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "unassessed",
-      "actual_priority": "unassessed",
-      "passed": true,
-      "processing_ms": 23.3
-    },
-    {
-      "case": "pole-lean",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 11.6
-    },
-    {
-      "case": "pole-lean",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 14.1
-    },
-    {
-      "case": "pole-lean",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 34.9
-    },
-    {
-      "case": "pole-lean",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 23.0
-    },
-    {
-      "case": "pole-lean",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 35.4
-    },
-    {
-      "case": "pole-lean",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 35.1
-    },
-    {
-      "case": "pole-lean",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 12.4
-    },
-    {
-      "case": "pole-lean",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 11.5
-    },
-    {
-      "case": "pole-lean",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 19.7
-    },
-    {
-      "case": "pole-lean",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 19.9
-    },
-    {
-      "case": "pole-lean",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 41.8
-    },
-    {
-      "case": "pole-lean",
-      "seed": 208,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 29.3
-    },
-    {
-      "case": "pole-lean",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 11.0
-    },
-    {
-      "case": "pole-lean",
-      "seed": 309,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 11.0
-    },
-    {
-      "case": "pole-lean",
-      "seed": 309,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 27.8
-    },
-    {
-      "case": "pole-lean",
-      "seed": 309,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 29.4
-    },
-    {
-      "case": "pole-lean",
-      "seed": 309,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 26.5
-    },
-    {
-      "case": "pole-lean",
-      "seed": 309,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "major",
-      "actual_priority": "major",
-      "passed": true,
-      "processing_ms": 26.1
-    },
-    {
-      "case": "camera-roll",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 10.1
-    },
-    {
-      "case": "camera-roll",
-      "seed": 71,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 9.7
-    },
-    {
-      "case": "camera-roll",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 18.6
-    },
-    {
-      "case": "camera-roll",
-      "seed": 71,
-      "scale": 1,
-      "jpeg_quality": 88,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 15.6
-    },
-    {
-      "case": "camera-roll",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 25.7
-    },
-    {
-      "case": "camera-roll",
-      "seed": 71,
-      "scale": 1.2,
-      "jpeg_quality": 88,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 21.0
-    },
-    {
-      "case": "camera-roll",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 9.9
-    },
-    {
-      "case": "camera-roll",
-      "seed": 208,
-      "scale": 0.7,
-      "jpeg_quality": 88,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
-      "passed": true,
-      "processing_ms": 9.7
-    },
-    {
-      "case": "camera-roll",
-      "seed": 208,
-      "scale": 1,
-      "jpeg_quality": 65,
-      "expected_priority": "routine",
-      "actual_priority": "routine",
       "passed": true,
       "processing_ms": 18.9
     },
     {
+      "case": "blur",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 19.2
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 12.2
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 11.1
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 22.4
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 19.1
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 37.1
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 31.6
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 11.3
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 12.0
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 17.5
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 17.6
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 30.0
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 30.1
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 11.2
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 11.0
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 17.5
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 16.2
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 27.5
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 28.8
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 11.4
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 10.9
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 20.5
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 16.7
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 33.4
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 24.2
+    },
+    {
+      "case": "camera-roll",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 11.2
+    },
+    {
+      "case": "camera-roll",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 10.4
+    },
+    {
+      "case": "camera-roll",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 20.2
+    },
+    {
       "case": "camera-roll",
       "seed": 208,
       "scale": 1,
@@ -1381,7 +1381,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 15.6
+      "processing_ms": 17.7
     },
     {
       "case": "camera-roll",
@@ -1391,7 +1391,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 25.3
+      "processing_ms": 29.9
     },
     {
       "case": "camera-roll",
@@ -1401,7 +1401,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 21.4
+      "processing_ms": 24.3
     },
     {
       "case": "camera-roll",
@@ -1411,7 +1411,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 10.0
+      "processing_ms": 11.2
     },
     {
       "case": "camera-roll",
@@ -1421,7 +1421,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 9.9
+      "processing_ms": 13.0
     },
     {
       "case": "camera-roll",
@@ -1431,7 +1431,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 18.4
+      "processing_ms": 21.9
     },
     {
       "case": "camera-roll",
@@ -1441,7 +1441,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 16.0
+      "processing_ms": 18.2
     },
     {
       "case": "camera-roll",
@@ -1451,7 +1451,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 25.5
+      "processing_ms": 34.6
     },
     {
       "case": "camera-roll",
@@ -1461,7 +1461,7 @@
       "expected_priority": "routine",
       "actual_priority": "routine",
       "passed": true,
-      "processing_ms": 21.0
+      "processing_ms": 27.8
     }
   ],
   "comparisons": [

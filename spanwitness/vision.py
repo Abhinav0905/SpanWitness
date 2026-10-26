@@ -221,14 +221,14 @@ def analyze(image: np.ndarray, normalized_span: list[list[float]] | None = None,
             report["findings"].append({"code": "alignment_unverified", "title": "Pole alignment needs a visible reference",
                 "observation": "The pole and a suitable reference edge must both have enough visible line support.",
                 "uncertainty": "Image vertical alone cannot separate camera roll from pole inclination.",
-                "next_action": "Mark the pole axis and a known vertical edge in the same image."})
+                "next_action": "Mark one continuous visible pole edge and a known vertical reference edge in the same image."})
         elif abs(alignment["relative_angle_deg"]) >= 7:
             report["findings"].append({"code": "pole_alignment_candidate", "title": "Pole differs from the selected reference",
                 "observation": f"Image-axis difference: {abs(alignment['relative_angle_deg']):.1f} degrees after subtracting the reference orientation.",
                 "uncertainty": "Perspective, reference selection and depth affect the result. This is not a physical lean measurement.",
                 "next_action": "Request a qualified structural inspection with the reference image."})
 
-    if tan_cover > .24 or green_cover > .55:
+    if pole_points is None and (tan_cover > .24 or green_cover > .55):
         report["findings"].append({"code": "ground_cover_candidate", "title": "Ground-cover review candidate",
             "observation": f"Bottom-third color coverage: {green_cover:.0%} green, {tan_cover:.0%} tan/brown.",
             "uncertainty": "Color does not establish grass species, height, dryness or fuel moisture.",

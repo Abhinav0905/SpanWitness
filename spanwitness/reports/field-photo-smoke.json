@@ -1,0 +1,262 @@
+{
+  "scope": "Two selected real photographs, not a blinded accuracy evaluation or a before/after pair. Publisher labels are not inputs.",
+  "results": [
+    {
+      "case": "field-house",
+      "input_sha256": "42ccb83d5cf0a90894458afe956d297ecbba2586660ce38162634121e96328f9",
+      "operator_marks": {
+        "pole": [
+          [
+            0.5040650406504065,
+            0.4252657911194497
+          ],
+          [
+            0.6449864498644986,
+            0.6378986866791745
+          ]
+        ],
+        "vertical_reference": [
+          [
+            0.556910569105691,
+            0.2188868042526579
+          ],
+          [
+            0.5555555555555556,
+            0.4065040650406504
+          ]
+        ]
+      },
+      "report": {
+        "runtime": {
+          "opencv": "5.0.0",
+          "method": "image-space-screening-v3"
+        },
+        "image": {
+          "width": 647,
+          "height": 1400
+        },
+        "quality": {
+          "usable": true,
+          "sharpness": 508.6,
+          "sharpness_reference_width": 800,
+          "dark_fraction": 0.0307,
+          "bright_fraction": 0.0612
+        },
+        "span_source": "automatic_candidate",
+        "span": null,
+        "pole_alignment": {
+          "pole": {
+            "usable": true,
+            "angle_from_image_vertical_deg": 17.93,
+            "edge_points": 281,
+            "observed_extent_fraction": 0.885,
+            "points": [
+              [
+                0.50407,
+                0.42527
+              ],
+              [
+                0.64499,
+                0.6379
+              ]
+            ],
+            "reason": "OpenCV directional-edge selection and Huber fit within the marked image corridor."
+          },
+          "reference": {
+            "usable": true,
+            "angle_from_image_vertical_deg": -1.4,
+            "edge_points": 184,
+            "observed_extent_fraction": 0.954,
+            "points": [
+              [
+                0.55691,
+                0.21889
+              ],
+              [
+                0.55556,
+                0.4065
+              ]
+            ],
+            "reason": "OpenCV directional-edge selection and Huber fit within the marked image corridor."
+          },
+          "relative_angle_deg": 19.33,
+          "usable": true,
+          "meaning": "Two-dimensional alignment relative to an operator-selected vertical reference. Not a gravity-calibrated or 3D pole-lean measurement."
+        },
+        "inspection_mode": "pole_alignment",
+        "ground_cover": {
+          "green_fraction": 0.0455,
+          "tan_fraction": 0.0268,
+          "meaning": "Color candidates in the bottom third; not grass identity or fuel moisture."
+        },
+        "findings": [
+          {
+            "code": "pole_alignment_candidate",
+            "title": "Pole differs from the selected reference",
+            "observation": "Image-axis difference: 19.3 degrees after subtracting the reference orientation.",
+            "uncertainty": "Perspective, reference selection and depth affect the result. This is not a physical lean measurement.",
+            "next_action": "Request a qualified structural inspection with the reference image."
+          }
+        ],
+        "scope": "Image-space screening only. No metric clearance, electrical diagnosis or fire-spread probability.",
+        "processing_ms": 45.2
+      },
+      "plan": {
+        "policy_version": "prototype-review-v1",
+        "priority": "major",
+        "label": "Major review",
+        "team": "Asset engineering",
+        "action": "Request a structural alignment inspection",
+        "reason": "The pole axis differs from the selected reference. Perspective and true physical lean require a qualified assessment.",
+        "trace": [
+          {
+            "tool": "assess_observation",
+            "result": "usable"
+          },
+          {
+            "tool": "screen_pole_alignment",
+            "result": [
+              "pole_alignment_candidate"
+            ]
+          },
+          {
+            "tool": "request_structural_review",
+            "result": "Attach the pole and reference-axis measurements."
+          },
+          {
+            "tool": "stage_review",
+            "result": {
+              "priority": "major",
+              "team": "Asset engineering",
+              "action": "Request a structural alignment inspection"
+            }
+          }
+        ],
+        "meaning": "Provisional crew-review priority, not certified asset severity or a dispatch order.",
+        "human_confirmation_required": true
+      }
+    },
+    {
+      "case": "field-warehouse",
+      "input_sha256": "a35238f28d2e37ff2555e2e04476fbe7db9c97e4fab25aa5e52e4decd8a8b7b5",
+      "operator_marks": {
+        "pole": [
+          [
+            0.5008488964346349,
+            0.39093041438623927
+          ],
+          [
+            0.47368421052631576,
+            0.7818608287724785
+          ]
+        ],
+        "vertical_reference": [
+          [
+            0.6876061120543294,
+            0.18764659890539484
+          ],
+          [
+            0.6706281833616299,
+            0.5238467552775606
+          ]
+        ]
+      },
+      "report": {
+        "runtime": {
+          "opencv": "5.0.0",
+          "method": "image-space-screening-v3"
+        },
+        "image": {
+          "width": 590,
+          "height": 1280
+        },
+        "quality": {
+          "usable": true,
+          "sharpness": 73.78,
+          "sharpness_reference_width": 800,
+          "dark_fraction": 0.014,
+          "bright_fraction": 0.1485
+        },
+        "span_source": "automatic_candidate",
+        "span": null,
+        "pole_alignment": {
+          "pole": {
+            "usable": false,
+            "reason": "No long edge supports the marked axis. Capture a clearer view or mark the full visible edge."
+          },
+          "reference": {
+            "usable": true,
+            "angle_from_image_vertical_deg": -2.31,
+            "edge_points": 326,
+            "observed_extent_fraction": 0.781,
+            "points": [
+              [
+                0.68761,
+                0.18765
+              ],
+              [
+                0.67063,
+                0.52385
+              ]
+            ],
+            "reason": "OpenCV directional-edge selection and Huber fit within the marked image corridor."
+          },
+          "relative_angle_deg": null,
+          "usable": false,
+          "meaning": "Two-dimensional alignment relative to an operator-selected vertical reference. Not a gravity-calibrated or 3D pole-lean measurement."
+        },
+        "inspection_mode": "pole_alignment",
+        "ground_cover": {
+          "green_fraction": 0.0324,
+          "tan_fraction": 0.4193,
+          "meaning": "Color candidates in the bottom third; not grass identity or fuel moisture."
+        },
+        "findings": [
+          {
+            "code": "alignment_unverified",
+            "title": "Pole alignment needs a visible reference",
+            "observation": "The pole and a suitable reference edge must both have enough visible line support.",
+            "uncertainty": "Image vertical alone cannot separate camera roll from pole inclination.",
+            "next_action": "Mark one continuous visible pole edge and a known vertical reference edge in the same image."
+          }
+        ],
+        "scope": "Image-space screening only. No metric clearance, electrical diagnosis or fire-spread probability.",
+        "processing_ms": 29.8
+      },
+      "plan": {
+        "policy_version": "prototype-review-v1",
+        "priority": "unassessed",
+        "label": "More evidence needed",
+        "team": "Asset inspection",
+        "action": "Capture a clearer pole view and mark continuous pole and reference edges",
+        "reason": "The observation is insufficient. An absence of detections cannot lower the review priority.",
+        "trace": [
+          {
+            "tool": "assess_observation",
+            "result": "usable"
+          },
+          {
+            "tool": "screen_pole_alignment",
+            "result": [
+              "alignment_unverified"
+            ]
+          },
+          {
+            "tool": "request_observation",
+            "result": "Do not issue a low-priority asset conclusion from this frame."
+          },
+          {
+            "tool": "stage_review",
+            "result": {
+              "priority": "unassessed",
+              "team": "Asset inspection",
+              "action": "Capture a clearer pole view and mark continuous pole and reference edges"
+            }
+          }
+        ],
+        "meaning": "Provisional crew-review priority, not certified asset severity or a dispatch order.",
+        "human_confirmation_required": true
+      }
+    }
+  ]
+}

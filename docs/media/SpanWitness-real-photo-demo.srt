@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:02,160
+A pole stands beside a school.
+
+2
+00:00:02,160 --> 00:00:04,680
+Last week's photo looks normal.
+
+3
+00:00:04,680 --> 00:00:06,800
+This week's photo looks different.
+
+4
+00:00:06,800 --> 00:00:09,800
+Did the pole move or did the camera?
+
+5
+00:00:09,800 --> 00:00:12,800
+The question is the problem behind SpanWitness.
+
+6
+00:00:12,800 --> 00:00:16,080
+Reviewing separate photos makes changes hard to judge.
+
+7
+00:00:16,600 --> 00:00:21,080
+Our approach keeps dated observations together by asset.
+
+8
+00:00:21,080 --> 00:00:23,960
+It compares supported evidence and gives the next inspection
+
+9
+00:00:24,000 --> 00:00:26,040
+a clear purpose.
+
+10
+00:00:26,800 --> 00:00:29,400
+Here is the working application.
+
+11
+00:00:29,400 --> 00:00:33,600
+The page explains the problem before the technical details.
+
+12
+00:00:39,300 --> 00:00:42,900
+The technical path starts with OpenCV5.
+
+13
+00:00:43,900 --> 00:00:47,300
+It selects supported edges and fits the marked axis.
+
+14
+00:00:48,000 --> 00:00:50,200
+A bounded policy chooses the next action.
+
+15
+00:00:54,000 --> 00:00:59,040
+A reviewer can inspect both images, add a note, and confirm a provisional review request.
+
+16
+00:01:12,400 --> 00:01:17,100
+In Asset History, we compare a baseline with a later inspection.
+
+17
+00:01:17,100 --> 00:01:21,500
+The demo uses original synthetic scenes and illustrative dates.
+
+18
+00:01:22,200 --> 00:01:25,400
+Feature matching checks the background while excluding the pole.
+
+19
+00:01:26,500 --> 00:01:28,700
+A bounded policy chooses the next action.
+
+20
+00:01:29,400 --> 00:01:32,000
+Amazon Lambda runs the analysis.
+
+21
+00:01:33,200 --> 00:01:38,500
+Private S3 stores images, DynamoDB store, observations and reviews.
+
+22
+00:01:44,200 --> 00:01:48,640
+108 controlled history checks passed.
+
+23
+00:01:48,640 --> 00:01:53,660
+Live cloud checks verified processing and saved record.
+
+24
+00:01:53,660 --> 00:01:57,080
+These are not field accuracy results.
+
+25
+00:01:57,800 --> 00:02:00,820
+This prototype does not diagnose cracks or predict
+
+26
+00:02:00,820 --> 00:02:03,460
+a pole falling.
+
+27
+00:02:03,460 --> 00:02:06,420
+The code and report explain the method.

@@ -8,7 +8,7 @@ SpanWitness groups dated observations by asset, compares a selected baseline wit
 
 The contribution is the inspection workflow and its evidence record. Utility inspection, line fitting, vegetation segmentation and feature matching are established methods. No claim of a new inspection algorithm or unseen research topic is made. The primary users are inspection reviewers and operators who collect repeat observations.
 
-The demo tests a known drawn alignment change, camera rotation and unsuitable comparisons. It also tests whether a second view changes the response to projected vegetation overlap. Technical details follow the problem and approach.
+The focused demonstration first screens one real, licensed field photograph and inspects its evidence. A second real photograph demonstrates insufficient edge support. The history examples separately test a known drawn alignment change, camera rotation and unsuitable comparisons. It also tests whether a second view changes the response to projected vegetation overlap. Technical details follow the problem and approach.
 
 ## OpenCV 5 workload
 
@@ -79,3 +79,11 @@ The real AWS evidence path passed. Three synthetic analysis calls took 1027.1, 2
 Two local learned pole-appearance classifiers were trained on the publisher's train split and selected on validation macro-F1. Neither met the declared integration boundary. The app does not load their weights or report their predictions. The publisher's test split remains untouched. Read [the experiment report](reports/MODEL_DEVELOPMENT.md) for the results and limits.
 
 Before a strong final submission, collect independent self-created footage, annotate visible conditions and test camera movement and poor contrast. Field accuracy, physical clearance and true lean remain unmeasured.
+
+## Real-photo demonstration update, 0.2.2
+
+Two pinned, credited PD-Defect field photographs are bundled. The first supports fitted pole and reference edges: their image-relative difference is 19.33 degrees. The policy requests structural alignment review. The second lacks enough support for the marked pole edge and requests a clearer pole observation. These are different assets, not a before/after pair. Publisher labels are not inputs, and these selected checks do not establish field precision, recall, physical lean accuracy or failure prediction. Full inputs and results are in [field-photo-smoke.json](reports/field-photo-smoke.json).
+
+Initial center-of-pole annotations failed because the method fits a continuous visible edge inside a narrow marked corridor. The UI now explicitly asks for visible-edge endpoints. Vision thresholds were not changed to fit the two examples. Pole mode no longer emits the conductor mode's bottom-third color trigger, which could mistake a brown wall for ground cover. An unresolved pole now requests pole evidence from asset inspection.
+
+The health endpoint exposes the actual OpenCV, Python and app versions, compute environment, Lambda function name, AWS region and storage backend. It returns no credentials or account ID. The UI displays those values and the opened origin in an optional deployment-verification panel. Regression suite: 62 passed. The new tests cover environment identification and the pole refusal's routing and source-credit preservation.

@@ -11,8 +11,13 @@
   },
   {
     "path": "README.md",
-    "sha256": "4dc9358bee32e86d9517b93f09f954d7ac0af7112938b94112180256776502df",
-    "bytes": 8639
+    "sha256": "580d1e735c1f10fef51ff179aa5eec566050c211743912ba118d8f29222d2d95",
+    "bytes": 9472
+  },
+  {
+    "path": "docs/DEMO.md",
+    "sha256": "6870c9b36fa46f53c0307cda2309427751e2194d372df9f29a49f065477e2f75",
+    "bytes": 1498
   },
   {
     "path": "docs/media/SpanWitness-architecture.png",
@@ -23,6 +28,21 @@
     "path": "docs/media/SpanWitness-cover.png",
     "sha256": "ce06568134b593b7739e34fe9a58509bf103098a9b33b172514ed4c457215b58",
     "bytes": 2136060
+  },
+  {
+    "path": "docs/media/SpanWitness-real-photo-cover.png",
+    "sha256": "cf35cdd0cdac1531c2d3b93c0599a1c8728861fe016f3167089302c02342eaf2",
+    "bytes": 1511905
+  },
+  {
+    "path": "docs/media/SpanWitness-real-photo-demo.srt",
+    "sha256": "1a48587f363ed4aad9e4d94e07cc017b65b69e2c39387d213948481e59d29153",
+    "bytes": 2175
+  },
+  {
+    "path": "docs/media/aws-real-photo-proof.jpg",
+    "sha256": "88fa92a6b1cceea9727befbe71840b4914f6a42c1ce8da3c7d8fd5aac823f5cf",
+    "bytes": 71381
   },
   {
     "path": "docs/media/history-change.jpg",
@@ -40,6 +60,11 @@
     "bytes": 97818
   },
   {
+    "path": "docs/media/real-photo-result.jpg",
+    "sha256": "ae5c88b1b8ad379bb400b4a2a1c0490ea09150931782676f0b2b13c20e4e4e27",
+    "bytes": 121938
+  },
+  {
     "path": "docs/media/review-queue.jpg",
     "sha256": "51579f647a9658454b42793fc22bdfb423b385628a817514c14df81c58e49edf",
     "bytes": 91801
@@ -51,8 +76,8 @@
   },
   {
     "path": "spanwitness/DATA.md",
-    "sha256": "09d7f6feb49a4467c50068949342829793de686f2ddcbb598d167d3e7dd6053a",
-    "bytes": 2505
+    "sha256": "ad2e66e4412ac26c4079b577d3f550b2067b3d80b06c8994aa84aa1203695f18",
+    "bytes": 3529
   },
   {
     "path": "spanwitness/DEPLOYMENT.md",
@@ -66,23 +91,23 @@
   },
   {
     "path": "spanwitness/README.md",
-    "sha256": "3e81727e2a21ce2a9484d475fef881c0fef5e5b5ee7c21a8a7aeff83c25214ce",
-    "bytes": 7853
+    "sha256": "1a08ffabd56b6052af13ab52c16afbda4be40dc7bc54b308ffeb9e693a3f5867",
+    "bytes": 8638
   },
   {
     "path": "spanwitness/TECHNICAL_REPORT.md",
-    "sha256": "78b9064f39db6c383203a9d76c238441e15523a85b50d64004205a5f31d621c7",
-    "bytes": 8186
+    "sha256": "c672bd644e0a1eca9e11c26597a1ecc15a4bcf0d0d37e0863942bc76ead166e6",
+    "bytes": 9881
   },
   {
     "path": "spanwitness/__init__.py",
-    "sha256": "9edecbc5afccf3832190286472c3cfd38409c567f44e3e378d5f1bbb2878b557",
+    "sha256": "d3790cde1b727bcf111ee4651bef267288f9bf38db2284740a5b231808a71852",
     "bytes": 85
   },
   {
     "path": "spanwitness/app.py",
-    "sha256": "fa4a24d005aadd28a9109563afbfbd971b7e771b08dd54160dd9d381a6fbd190",
-    "bytes": 17605
+    "sha256": "4917b069b18beba0a56c2358401089c633ce4c5711878d7fc3c8354009796324",
+    "bytes": 17911
   },
   {
     "path": "spanwitness/aws_store.py",
@@ -96,8 +121,8 @@
   },
   {
     "path": "spanwitness/datasets/SOURCES.md",
-    "sha256": "bb0cac2c6e0bba31c1a47ada25faffcdfa17ec8ed2608b324f62635b72e72512",
-    "bytes": 3395
+    "sha256": "2a43f19569b28cf912c93785fc6db4858b5a213d5484d719f6b5495e78b33415",
+    "bytes": 4344
   },
   {
     "path": "spanwitness/datasets/pd_defect/MANIFEST.json",
@@ -116,8 +141,8 @@
   },
   {
     "path": "spanwitness/examples.py",
-    "sha256": "8e65d288a6c892a85b0162038dffd48d86a3348d85846c4b27ea869db0c9f42a",
-    "bytes": 8094
+    "sha256": "5338038f7c8ba1956b13ca99e292dbcfb22abeae5305e0d4f818f635eeb2c19f",
+    "bytes": 9061
   },
   {
     "path": "spanwitness/history.py",
@@ -146,8 +171,8 @@
   },
   {
     "path": "spanwitness/policy.py",
-    "sha256": "b474bea0bf0a887ea7b3639dac46858b842f6206849fa9cf428d8d2e6644c112",
-    "bytes": 6094
+    "sha256": "ab94edff3d203ed9c5b642393d5b1c4e18cd939156b830d37973cf76406bfde4",
+    "bytes": 6290
   },
   {
     "path": "spanwitness/reports/AWS_LIVE.md",
@@ -156,8 +181,13 @@
   },
   {
     "path": "spanwitness/reports/EVALUATION.md",
-    "sha256": "a1d7a1325a671536f0d1475f259cd2f8706c1611114076f0ff6750f78308c777",
+    "sha256": "16f41cbe42b0bd64e4d9ec7efe66019e1a5a3388a29ae4e4f8c4a3ef96679a38",
     "bytes": 987
+  },
+  {
+    "path": "spanwitness/reports/FIELD_PHOTOS.md",
+    "sha256": "ca93da79aa5feb90bd364463cb355c607973caed38a6cbe32bd6e906f18bf0ea",
+    "bytes": 2258
   },
   {
     "path": "spanwitness/reports/HISTORY_EVALUATION.md",
@@ -185,6 +215,11 @@
     "bytes": 5321
   },
   {
+    "path": "spanwitness/reports/aws-field-live-receipt.json",
+    "sha256": "5c349f5fee47afc6031f11f8d1fd51668d7a358d14ae608b28eb5255c70e26ca",
+    "bytes": 5627
+  },
+  {
     "path": "spanwitness/reports/aws-history-live-receipt.json",
     "sha256": "efed57e238bfed17df9e12952374ec7db65215e98418f1c01bd62c657a545526",
     "bytes": 6455
@@ -193,6 +228,11 @@
     "path": "spanwitness/reports/aws-live-receipt.json",
     "sha256": "6312a992f7b2e0cd03856fdd73108d746c18d1290380a1b7dcfcf2a3bdffa8cc",
     "bytes": 3791
+  },
+  {
+    "path": "spanwitness/reports/aws-real-photo-receipt.json",
+    "sha256": "e595f55ab3712e4fb9ccf76b12c4307454c3413d433bd8fcfdc998d53fa9e46f",
+    "bytes": 864
   },
   {
     "path": "spanwitness/reports/aws-story-live-receipt.json",
@@ -211,8 +251,13 @@
   },
   {
     "path": "spanwitness/reports/evaluation.json",
-    "sha256": "d7f009ac75f439a42d91cdcb6e050492f46fa40f364009447ec7ed579a9f5bac",
-    "bytes": 40862
+    "sha256": "0df9ace13dc8f74166c8889e2d2a09a31afd33077d82d7051a2402a748289757",
+    "bytes": 40861
+  },
+  {
+    "path": "spanwitness/reports/field-photo-smoke.json",
+    "sha256": "0616a67cf1d79e437773f3533331613316728b9b7f146ab55201448f4e53021c",
+    "bytes": 8764
   },
   {
     "path": "spanwitness/reports/history-baseline.json",
@@ -221,8 +266,8 @@
   },
   {
     "path": "spanwitness/reports/history-evaluation.json",
-    "sha256": "39bdff01f8ae565cff84a96f5d2f26a9631c00560fb87474497e5c4bf158a1f4",
-    "bytes": 114431
+    "sha256": "4f95c1e8d9d0372a5c08cd241a207e8d083b6be13cf1f49a8ea8b6083acb5fed",
+    "bytes": 114439
   },
   {
     "path": "spanwitness/reports/pole-model-development.json",
@@ -316,8 +361,8 @@
   },
   {
     "path": "spanwitness/static/app.js",
-    "sha256": "08b871c3b458c5ba96bb41eb95e0a0931954773519041cae476af08595e7021f",
-    "bytes": 23036
+    "sha256": "1651d04346abdfeed8707e4b0ef87f6ca94f1a447c1a0b6af02eb907e999c40e",
+    "bytes": 23665
   },
   {
     "path": "spanwitness/static/history.js",
@@ -326,13 +371,13 @@
   },
   {
     "path": "spanwitness/static/index.html",
-    "sha256": "23b1084d727c751dd13a3429cbcfdecd04a50d8048c09e98d69eeed015407693",
-    "bytes": 15464
+    "sha256": "c814353a535d14c61233c841c8a289d61c275d7b9e4c6278ded392be63304c61",
+    "bytes": 15876
   },
   {
     "path": "spanwitness/static/samples/ATTRIBUTION.json",
-    "sha256": "7aba99486740bd395eaee762af5b1f6b1673f41f0bacc9256ee2d824f036678d",
-    "bytes": 1062
+    "sha256": "a165b3b636c1ff2ddc5a8c132d2e9d5e88ad1cc4f1ce1f5b34259adb0711bb63",
+    "bytes": 3006
   },
   {
     "path": "spanwitness/static/samples/field-crossing.jpg",
@@ -340,14 +385,24 @@
     "bytes": 155335
   },
   {
+    "path": "spanwitness/static/samples/field-house.jpg",
+    "sha256": "42ccb83d5cf0a90894458afe956d297ecbba2586660ce38162634121e96328f9",
+    "bytes": 198734
+  },
+  {
     "path": "spanwitness/static/samples/field-span.jpg",
     "sha256": "e2a6ccac232ddca8ac44d1e6192d839fe2db0bb44fedf63e477d844c63eaf6b8",
     "bytes": 66331
   },
   {
+    "path": "spanwitness/static/samples/field-warehouse.jpg",
+    "sha256": "a35238f28d2e37ff2555e2e04476fbe7db9c97e4fab25aa5e52e4decd8a8b7b5",
+    "bytes": 80243
+  },
+  {
     "path": "spanwitness/static/style.css",
-    "sha256": "c77478c02059cc047e136fd55dcb71dcb4d7d982d4c3ca468bfae2a8a9e0607b",
-    "bytes": 27464
+    "sha256": "60d88b28ba06c6e037dddbd7481df13229d6d595a530888bdc778e49e3efe1eb",
+    "bytes": 28095
   },
   {
     "path": "spanwitness/store.py",
@@ -371,13 +426,13 @@
   },
   {
     "path": "spanwitness/tests/test_workflow.py",
-    "sha256": "9ea64d24bd1679d6eba94ed58f22942bc62a4d4a01f6b6a4ff2e22c18454dd30",
-    "bytes": 7700
+    "sha256": "e527b36befbbeccb0b105e834bc4c4dca5d71354955536d5f1f9b210ec950e70",
+    "bytes": 9206
   },
   {
     "path": "spanwitness/vision.py",
-    "sha256": "43606389a2c77c2994b67b9c7a37c5771ac7611a19d9ab5345cef2b9652fdd0a",
-    "bytes": 18128
+    "sha256": "9aa4caa238b2e1e5f18ca2d6b016eb1dd14d4d1fee97615e96583c7eafa99f8d",
+    "bytes": 18183
   },
   {
     "path": "spanwitness/weather.py",

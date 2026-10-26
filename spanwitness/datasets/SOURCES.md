@@ -12,7 +12,7 @@ Checked October 25, 2026. Public documents can inform the inspection workflow; d
 
 The first selection uses only the publisher's validation splits: eight Leaned, eight Straight and eight Rejected pole images, plus six Risky and six Safe vegetation/conductor images. Selection follows a deterministic hash ordering of source paths, not model scores. The original labels and vegetation polygons are retained separately from image analysis.
 
-The script downloads raw images into the ignored `data/public_datasets/pd_defect/` directory. The manifest contains source URLs, hashes, sizes, split names, publisher labels and attribution. The source archive includes the manifest and a reproducer, not the raw photographs.
+The script downloads raw images into the ignored `data/public_datasets/pd_defect/` directory. The manifest contains source URLs, hashes, sizes, split names, publisher labels and attribution. The source archive includes the manifest and a reproducer. It also includes the two credited demonstration photographs described below.
 
 Publisher labels are not our model's predictions. The pole labels do not provide instrument-measured physical lean. Vegetation labels and masks do not provide metric clearance or wildfire probability. A small, class-balanced sample does not estimate the prevalence of conditions in a utility network. Keep the publisher's test split untouched until the method and evaluation procedure are frozen.
 
@@ -35,3 +35,9 @@ A local reference copy is in `data/public_references/`; it is excluded from the 
 [Porcelain Disk type insulators](https://data.mendeley.com/datasets/5pwrd7gmw2/1), Shafi Jiskani (2026), DOI [10.17632/5pwrd7gmw2.1](https://doi.org/10.17632/5pwrd7gmw2.1). The publisher describes 255 aerial images with condition annotations and a CC BY 4.0 license.
 
 Not downloaded or used by the current model. Insulator-condition detection requires its own model, evaluation and failure cases; it is not part of the conductor-edge screen.
+
+## Two public demonstration photographs
+
+Photographs 713 and 1005 from the pinned validation revision are bundled as `static/samples/field-house.jpg` and `field-warehouse.jpg`. They were selected after visual inspection to explain one supported alignment screen and one insufficient-edge case. This is a selected smoke check, not a blinded accuracy evaluation. Neither image represents a school, and they are different assets, not a before/after pair.
+
+The original JPEG bytes are preserved. Neither file contains EXIF. A visual review found no identifiable faces or readable vehicle plates. Source hashes, complete author credit, CC BY 4.0 links and modification notes are in `static/samples/ATTRIBUTION.json`. The app's gold and blue lines are example operator annotations; they are not publisher labels or automatic pole identification. Annotated outputs are derivatives of those photographs.

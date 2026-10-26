@@ -6,6 +6,8 @@ import cv2
 import numpy as np
 
 EXAMPLES = [
+    {"id": "field-house", "name": "Field photograph: pole beside a house", "description": "PD-Defect authors / CC BY 4.0. Real field photograph with two example operator marks. No physical lean or failure diagnosis.", "second_view": False, "kind": "public_image"},
+    {"id": "field-warehouse", "name": "Field photograph: limited pole-edge support", "description": "PD-Defect authors / CC BY 4.0. Real field photograph with example operator marks; the selected pole edge is insufficient for an alignment result.", "second_view": False, "kind": "public_image"},
     {"id": "perspective", "name": "A suspicious overlap", "description": "Compare a second viewpoint before escalating an apparent contact.", "second_view": True, "kind": "synthetic"},
     {"id": "persistent", "name": "Overlap in both views", "description": "A second observation keeps the clearance question open.", "second_view": True, "kind": "synthetic"},
     {"id": "gap", "name": "A conductor gap candidate", "description": "A deliberately missing segment tests the engineering-review branch.", "second_view": False, "kind": "synthetic"},
@@ -20,7 +22,7 @@ EXAMPLES = [
 
 
 def normalized_span(example: str, view: int = 1) -> list[list[float]] | None:
-    if example in {"pole-lean", "camera-roll"}:
+    if example in {"pole-lean", "camera-roll", "field-house", "field-warehouse"}:
         return None
     if example == "field-crossing":
         return [[.47, .405], [.73, .43], [.98, .455]]
@@ -31,6 +33,12 @@ def normalized_span(example: str, view: int = 1) -> list[list[float]] | None:
 
 
 def pole_annotations(example: str) -> dict | None:
+    if example == "field-house":
+        return {"pole": [[372/738, 680/1599], [476/738, 1020/1599]],
+                "vertical_reference": [[411/738, 350/1599], [410/738, 650/1599]]}
+    if example == "field-warehouse":
+        return {"pole": [[295/589, 500/1279], [279/589, 1000/1279]],
+                "vertical_reference": [[405/589, 240/1279], [395/589, 670/1279]]}
     if example not in {"pole-lean", "camera-roll"}:
         return None
     pole = np.array([[390, 115], [510, 555]] if example == "pole-lean" else [[450, 115], [450, 555]], np.float32)

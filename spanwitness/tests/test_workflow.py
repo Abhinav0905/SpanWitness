@@ -162,6 +162,31 @@ def test_invalid_upload_and_span_are_client_errors(client):
     assert client.get("/api/observations/not-a-record").status_code == 404
 
 
+def test_health_identifies_actual_compute_environment(client, monkeypatch):
+    monkeypatch.delenv("AWS_LAMBDA_FUNCTION_NAME", raising=False)
+    assert client.get("/api/health").json()["runtime"]["compute"] == "local"
+    monkeypatch.setenv("AWS_LAMBDA_FUNCTION_NAME", "spanwitness-test-function")
+    monkeypatch.setenv("AWS_REGION", "us-west-2")
+    runtime = client.get("/api/health").json()["runtime"]
+    assert runtime["compute"] == "aws_lambda"
+    assert runtime["function"] == "spanwitness-test-function"
+    assert runtime["region"] == "us-west-2"
+
+
+def test_unresolved_pole_does_not_route_a_brown_wall_to_vegetation(client):
+    example = next(item for item in client.get("/api/examples").json() if item["id"] == "field-warehouse")
+    response = client.post("/api/analyze", files={"image": ("field.jpg", client.get(example["image_url"]).content, "image/jpeg")},
+                           data={"source_kind": "public_image", "pole": json.dumps(example["geometry"]["pole"]),
+                                 "vertical_reference": json.dumps(example["geometry"]["vertical_reference"])})
+    record = response.json()
+    assert record["plan"]["priority"] == "unassessed"
+    assert record["plan"]["team"] == "Asset inspection"
+    assert "pole" in record["plan"]["action"]
+    assert "conductor" not in record["plan"]["action"]
+    assert "ground_cover_candidate" not in {item["code"] for item in record["report"]["findings"]}
+    assert record["source_attribution"]["license"] == "CC BY 4.0"
+
+
 def test_followup_rejects_different_asset(client):
     record = submit(client).json()
     assert submit(client, reference_id=record["id"], asset_id="Another pole").status_code == 400

@@ -24,6 +24,12 @@ python3.14 -m venv .venv
 
 Open http://127.0.0.1:8765.
 
+Start with the default **Field photograph: pole beside a house**. Its gold and blue marks are example operator selections along visible edges. Analyze it, compare the original with the evidence overlay, then stage a human review. Try **Field photograph: limited pole-edge support** to see the app request another observation. The two images show different assets, not change over time. See [the field-photo check](reports/FIELD_PHOTOS.md).
+
+The expandable **Verify this running deployment** panel reads the actual server's OpenCV, compute, storage and application versions. It also displays the browser's opened origin. A local server identifies itself as local.
+
+Other workflows:
+
 1. Select **A suspicious overlap**, then **Analyze observation**. The image measurement triggers a second-view request.
 2. Select **Compare a second viewpoint**. OpenCV matches landmarks and checks that the selected conductor corresponds between the images. A reduced overlap changes the review plan.
 3. Repeat with **Overlap in both views**. The overlap persists and the plan requests a qualified clearance inspection.
@@ -33,7 +39,7 @@ Open http://127.0.0.1:8765.
 
 For your own history, supply the asset ID and observation time under **Observation date and asset context**. Mark the pole and the same fixed reference in each image. In **Asset history**, select the two observations and confirm the repeatable capture setup. The saved-record date is never silently used as a photo capture date.
 
-The example picker contains eight controlled synthetic cases and two licensed field photographs. Synthetic examples test decisions; the field photographs have no validated condition labels.
+The example picker contains eight controlled synthetic cases and four licensed field photographs. Two new PD-Defect photographs demonstrate one supported pole-edge screen and one insufficient-edge refusal. They are selected examples, not a blind field-accuracy evaluation.
 
 ## Implemented
 
@@ -82,7 +88,7 @@ No Bedrock model, trained defect detector or external crew-notification service 
 
 ## Data and source
 
-The procedural scenes are original code-generated fixtures. Field photographs are credited in [DATA.md](DATA.md) and [ATTRIBUTION.json](static/samples/ATTRIBUTION.json). Preserve their CC BY-SA 2.0 attribution and license when distributing images or overlays.
+The procedural scenes are original code-generated fixtures. Field photographs are credited in [DATA.md](DATA.md) and [ATTRIBUTION.json](static/samples/ATTRIBUTION.json). Preserve the credited CC BY-SA 2.0 or CC BY 4.0 attribution and license when distributing images or overlays.
 
 For additional real images, see the [public dataset catalog and downloader](datasets/SOURCES.md). Downloaded reference labels are kept separate from the application's measurements. They do not become predictions merely by appearing in a dataset.
 

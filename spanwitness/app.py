@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import os
+import platform
 from pathlib import Path
 import re
 import secrets
@@ -72,7 +73,10 @@ def index():
 @app.get("/api/health")
 def health():
     return {"status": "ok", "app_version": __version__, "opencv": cv2.__version__,
-            "storage": store.backend, "dispatch": "review_queue_only", "model": "classical_cv_with_bounded_policy"}
+            "storage": store.backend, "dispatch": "review_queue_only", "model": "classical_cv_with_bounded_policy",
+            "runtime": {"compute": "aws_lambda" if os.environ.get("AWS_LAMBDA_FUNCTION_NAME") else "local",
+                        "function": os.environ.get("AWS_LAMBDA_FUNCTION_NAME"),
+                        "region": os.environ.get("AWS_REGION"), "python": platform.python_version()}}
 
 
 @app.get("/api/examples")

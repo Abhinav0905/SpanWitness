@@ -10,21 +10,21 @@ The original conductor and vegetation workflow also screens visible evidence and
 
 This is an independent hackathon prototype. No workplace code or images are included.
 
-![SpanWitness illustrative concept cover](docs/media/SpanWitness-cover.png)
+![Real pole photograph used in the demonstration](docs/media/SpanWitness-real-photo-cover.png)
 
-*AI-generated concept art. The working demo uses labeled synthetic fixtures and credited field photographs.*
+*Real PD-Defect photograph, CC BY 4.0. Full author and source credit is in [DATA.md](spanwitness/DATA.md). The app adds operator marks and evidence overlays.*
 
 ## Watch the demo
 
-[1080p narrated demo on YouTube](https://youtu.be/00i3KlrgI1c). It starts with the problem, gives the real-life example, shows the approach and working application, then explains the technical path and results. The narration uses edited Suno Speech. The app captures use synthetic scenes with illustrative dates.
+[1080p real-photo demo on YouTube](https://youtu.be/D4xqli_3MPo). It follows the problem, approach, one real-photo inspection, a human review request, a second-photo refusal, a separate controlled history example and actual OpenCV/AWS evidence. Narration uses edited Suno Speech. The two real photographs are different assets, not a before/after pair.
 
-The [Devpost project](https://devpost.com/software/spanwitness) contains the write-up and gallery. Submission status is verified separately in the contest portal.
+[Devpost project](https://devpost.com/software/spanwitness).
 
 ## Try the local application
 
 The [private AWS preview](https://ec1f3mu6m7.execute-api.us-west-2.amazonaws.com) is deployed and verified. Access details are in [DEPLOYMENT.md](spanwitness/DEPLOYMENT.md). Its actual image processing runs in Lambda with private S3 and DynamoDB storage.
 
-Python 3.14 was used for development. Run commands from the repository root.
+Python 3.14 was used for development. Run commands from the workspace root, one directory above this file.
 
 ```sh
 python3.14 -m venv .venv
@@ -33,6 +33,12 @@ python3.14 -m venv .venv
 ```
 
 Open http://127.0.0.1:8765.
+
+Start with the default **Field photograph: pole beside a house**. Its gold and blue marks are example operator selections along visible edges. Analyze it, compare the original with the evidence overlay, then stage a human review. Try **Field photograph: limited pole-edge support** to see the app request another observation. The two images show different assets, not change over time. See [the field-photo check](spanwitness/reports/FIELD_PHOTOS.md).
+
+The expandable **Verify this running deployment** panel reads the actual server's OpenCV, compute, storage and application versions. It also displays the browser's opened origin. A local server identifies itself as local.
+
+Other workflows:
 
 1. Select **A suspicious overlap**, then **Analyze observation**. The image measurement triggers a second-view request.
 2. Select **Compare a second viewpoint**. OpenCV matches landmarks and checks that the selected conductor corresponds between the images. A reduced overlap changes the review plan.
@@ -43,7 +49,7 @@ Open http://127.0.0.1:8765.
 
 For your own history, supply the asset ID and observation time under **Observation date and asset context**. Mark the pole and the same fixed reference in each image. In **Asset history**, select the two observations and confirm the repeatable capture setup. The saved-record date is never silently used as a photo capture date.
 
-The example picker contains eight controlled synthetic cases and two licensed field photographs. Synthetic examples test decisions; the field photographs have no validated condition labels.
+The example picker contains eight controlled synthetic cases and four licensed field photographs. Two new PD-Defect photographs demonstrate one supported pole-edge screen and one insufficient-edge refusal. They are selected examples, not a blind field-accuracy evaluation.
 
 ## Implemented
 
@@ -92,7 +98,7 @@ No Bedrock model, trained defect detector or external crew-notification service 
 
 ## Data and source
 
-The procedural scenes are original code-generated fixtures. Field photographs are credited in [DATA.md](spanwitness/DATA.md) and [ATTRIBUTION.json](spanwitness/static/samples/ATTRIBUTION.json). Preserve their CC BY-SA 2.0 attribution and license when distributing images or overlays.
+The procedural scenes are original code-generated fixtures. Field photographs are credited in [DATA.md](spanwitness/DATA.md) and [ATTRIBUTION.json](spanwitness/static/samples/ATTRIBUTION.json). Preserve the credited CC BY-SA 2.0 or CC BY 4.0 attribution and license when distributing images or overlays.
 
 For additional real images, see the [public dataset catalog and downloader](spanwitness/datasets/SOURCES.md). Downloaded reference labels are kept separate from the application's measurements. They do not become predictions merely by appearing in a dataset.
 
