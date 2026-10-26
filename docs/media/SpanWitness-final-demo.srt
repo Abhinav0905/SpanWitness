@@ -1,0 +1,195 @@
+1
+00:00:00,103 --> 00:00:03,762
+Pole inspection photos leave a reviewer with three questions.
+
+2
+00:00:04,553 --> 00:00:06,212
+Is there a visible concern?
+
+3
+00:00:07,000 --> 00:00:08,607
+Has the asset changed?
+
+4
+00:00:09,395 --> 00:00:12,423
+Is the image clear enough to support either conclusion?
+
+5
+00:00:13,211 --> 00:00:17,015
+Camera movement and poor contrast can make those decisions harder.
+
+6
+00:00:17,803 --> 00:00:21,947
+SpanWitness keeps the photos, supported image measurements and next
+
+7
+00:00:21,947 --> 00:00:24,554
+inspection step together for each asset.
+
+8
+00:00:25,342 --> 00:00:28,449
+OpenCV 5 is the image-processing engine.
+
+9
+00:00:29,250 --> 00:00:33,355
+It checks sharpness, detects edges with Canny and finds long line
+
+10
+00:00:33,355 --> 00:00:35,383
+candidates with a Hough transform.
+
+11
+00:00:36,171 --> 00:00:40,605
+Inside the operator-marked pole and reference regions, Huber line fitting
+
+12
+00:00:40,605 --> 00:00:42,554
+estimates their orientations.
+
+13
+00:00:43,342 --> 00:00:45,870
+The app then compares those image angles.
+
+14
+00:00:46,658 --> 00:00:49,936
+The same pipeline runs on Amazon Web Services.
+
+15
+00:00:50,737 --> 00:00:53,528
+API Gateway sends requests to Lambda.
+
+16
+00:00:54,316 --> 00:01:00,289
+Private S3 stores images, and DynamoDB stores observations, comparisons and
+
+17
+00:01:00,289 --> 00:01:01,528
+review requests.
+
+18
+00:01:02,316 --> 00:01:05,699
+Now let's follow one inspection in the working application.
+
+19
+00:01:06,487 --> 00:01:09,789
+This is a real, openly licensed photo of a pole beside
+
+20
+00:01:09,789 --> 00:01:10,488
+a house.
+
+21
+00:01:11,289 --> 00:01:14,686
+The gold and blue marks select the pole and building reference.
+
+22
+00:01:15,474 --> 00:01:20,633
+After analysis, the measured difference is 19.3 degrees in this photograph.
+
+23
+00:01:21,421 --> 00:01:23,923
+It is not a measurement of physical pole lean.
+
+24
+00:01:24,711 --> 00:01:27,791
+The app proposes a structural alignment inspection.
+
+25
+00:01:28,579 --> 00:01:32,658
+A reviewer can inspect the original and annotated images, add a
+
+26
+00:01:32,658 --> 00:01:35,133
+note and confirm a provisional request.
+
+27
+00:01:35,921 --> 00:01:38,712
+The saved record keeps the evidence attached.
+
+28
+00:01:39,500 --> 00:01:42,173
+No external crew notification is sent.
+
+29
+00:01:42,961 --> 00:01:46,331
+A second real photograph demonstrates the other outcome.
+
+30
+00:01:47,118 --> 00:01:50,212
+Here, the marked pole edge lacks enough support.
+
+31
+00:01:51,013 --> 00:01:54,896
+The app returns no angle and requests a clearer observation.
+
+32
+00:01:55,697 --> 00:01:59,067
+These are different assets, not a before-and-after pair.
+
+33
+00:01:59,868 --> 00:02:04,316
+For dated observations of the same asset, history compares a baseline
+
+34
+00:02:04,316 --> 00:02:05,765
+with a later inspection.
+
+35
+00:02:06,566 --> 00:02:11,475
+OpenCV uses ORB features and RANSAC to check the shared background.
+
+36
+00:02:12,276 --> 00:02:16,567
+Reference and perspective checks can reject unsuitable comparisons.
+
+37
+00:02:17,355 --> 00:02:20,962
+Repeatable capture and a fixed reference are still required.
+
+38
+00:02:21,750 --> 00:02:26,488
+The history example shown here uses synthetic scenes and illustrative dates.
+
+39
+00:02:27,276 --> 00:02:32,054
+The deployment view shows the actual hosted address and OpenCV runtime.
+
+40
+00:02:32,855 --> 00:02:38,355
+In AWS, we read back the same real-photo observation from DynamoDB
+
+41
+00:02:38,355 --> 00:02:41,304
+and verify the stored image hash in S3.
+
+42
+00:02:42,105 --> 00:02:47,120
+62 software tests and 108 controlled history checks passed.
+
+43
+00:02:47,921 --> 00:02:52,408
+The two real photos are selected demonstrations, not a field accuracy
+
+44
+00:02:52,408 --> 00:02:53,278
+benchmark.
+
+45
+00:02:54,066 --> 00:02:58,355
+This prototype does not diagnose cracks, predict a pole falling or
+
+46
+00:02:58,355 --> 00:03:00,291
+calculate fire probability.
+
+47
+00:03:01,079 --> 00:03:04,171
+Its purpose is to help an inspector decide what to review
+
+48
+00:03:04,171 --> 00:03:07,225
+next, with the evidence and its limits attached.
+
+49
+00:03:08,013 --> 00:03:11,067
+I am Kumar Abhinav, and this is SpanWitness.

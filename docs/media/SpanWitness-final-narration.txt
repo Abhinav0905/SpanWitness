@@ -1,0 +1,25 @@
+Pole inspection photos leave a reviewer with three questions. Is there a visible concern? Has the asset changed? Is the image clear enough to support either conclusion? Camera movement and poor contrast can make those decisions harder.
+
+Span Witness keeps the photos, supported image measurements and next inspection step together for each asset.
+
+Open C V five is the image-processing engine. It checks sharpness, detects edges with Canny and finds long line candidates with a Hough transform. Inside the operator-marked pole and reference regions, Huber line fitting estimates their orientations. The app then compares those image angles.
+
+The same pipeline runs on Amazon Web Services. A P I Gateway sends requests to Lambda. Private S three stores images, and Dynamo D B stores observations, comparisons and review requests.
+
+Now let's follow one inspection in the working application.
+
+This is a real, openly licensed photo of a pole beside a house. The gold and blue marks select the pole and building reference. After analysis, the measured difference is nineteen point three degrees in this photograph. It is not a measurement of physical pole lean.
+
+The app proposes a structural alignment inspection. A reviewer can inspect the original and annotated images, add a note and confirm a provisional request. The saved record keeps the evidence attached. No external crew notification is sent.
+
+A second real photograph demonstrates the other outcome. Here, the marked pole edge lacks enough support. The app returns no angle and requests a clearer observation. These are different assets, not a before-and-after pair.
+
+For dated observations of the same asset, history compares a baseline with a later inspection. Open C V uses O R B features and RANSAC to check the shared background. Reference and perspective checks can reject unsuitable comparisons. Repeatable capture and a fixed reference are still required. The history example shown here uses synthetic scenes and illustrative dates.
+
+The deployment view shows the actual hosted address and Open C V runtime. In AWS, we read back the same real-photo observation from Dynamo D B and verify the stored image hash in S three.
+
+Sixty-two software tests and one hundred and eight controlled history checks passed. The two real photos are selected demonstrations, not a field accuracy benchmark.
+
+This prototype does not diagnose cracks, predict a pole falling or calculate fire probability. Its purpose is to help an inspector decide what to review next, with the evidence and its limits attached.
+
+I am Kumar Abhinav, and this is Span Witness.

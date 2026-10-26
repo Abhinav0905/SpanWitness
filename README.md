@@ -16,15 +16,19 @@ This is an independent hackathon prototype. No workplace code or images are incl
 
 ## Watch the demo
 
-[1080p real-photo demo on YouTube](https://youtu.be/D4xqli_3MPo). It follows the problem, approach, one real-photo inspection, a human review request, a second-photo refusal, a separate controlled history example and actual OpenCV/AWS evidence. Narration uses edited Suno Speech. The two real photographs are different assets, not a before/after pair.
+[1080p real-photo demo on YouTube](https://youtu.be/Qj62M_E8ptI). It follows the problem, approach, one real-photo inspection, a human review request, a second-photo refusal, a separate controlled history example and actual OpenCV/AWS evidence. The 3-minute-16-second edit uses one continuous Python-generated narration. It opens on the actual UI, shows Canny edges, Hough line candidates and fitted orientations, then explains the AWS architecture before the walkthrough. The two real photographs are different assets, not a before/after pair.
 
-[Devpost project](https://devpost.com/software/spanwitness).
+[Devpost project](https://devpost.com/software/spanwitness). [Narration, captions and processing evidence](docs/DEMO.md).
+
+![Actual OpenCV processing outputs](docs/media/SpanWitness-OpenCV-processing.png)
+
+*Diagnostic capture of the actual analyze() function on one selected, credited PD-Defect photograph. The fitted angle describes image geometry, not physical pole lean.*
 
 ## Try the local application
 
 The [private AWS preview](https://ec1f3mu6m7.execute-api.us-west-2.amazonaws.com) is deployed and verified. Access details are in [DEPLOYMENT.md](spanwitness/DEPLOYMENT.md). Its actual image processing runs in Lambda with private S3 and DynamoDB storage.
 
-Python 3.14 was used for development. Run commands from the workspace root, one directory above this file.
+Python 3.14 was used for development. Run commands from the repository root.
 
 ```sh
 python3.14 -m venv .venv

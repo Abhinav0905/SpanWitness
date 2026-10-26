@@ -11,13 +11,43 @@
   },
   {
     "path": "README.md",
-    "sha256": "580d1e735c1f10fef51ff179aa5eec566050c211743912ba118d8f29222d2d95",
-    "bytes": 9472
+    "sha256": "c1aba83909029583bbddceb5e3450b478fb4217df2d360df62b81759323b6d91",
+    "bytes": 9949
+  },
+  {
+    "path": "demo-video/README.md",
+    "sha256": "a640430d9c5307c197be09ff1e1bbc8ac91deadf18babd22362fd72cb053b746",
+    "bytes": 1059
+  },
+  {
+    "path": "demo-video/build_opencv_evidence.py",
+    "sha256": "c043cf6006f7b0ac52bef03acdce1b25391d81d71a1a0693def0b926117797d3",
+    "bytes": 4799
+  },
+  {
+    "path": "demo-video/generate_final_narration.py",
+    "sha256": "c8c18714faf78816ad43cf7f62179a2f79f2fd5b4146d6f7476f58fcf087e214",
+    "bytes": 2183
+  },
+  {
+    "path": "demo-video/requirements.txt",
+    "sha256": "30ee848e114728d56d3f13d743c9f6156c7876af2d1d0a1a5b4f487721f9e5c8",
+    "bytes": 16
+  },
+  {
+    "path": "demo-video/spanwitness-single-take-script-v2.txt",
+    "sha256": "034efaef01905d4bee32e41e47b8d9a91ecb89ba53fa07f475b4fa3cb73d74b1",
+    "bytes": 2605
   },
   {
     "path": "docs/DEMO.md",
-    "sha256": "6870c9b36fa46f53c0307cda2309427751e2194d372df9f29a49f065477e2f75",
-    "bytes": 1498
+    "sha256": "49916ee952d70d9e5c82bd88e8ceb0dbe0a5db47b6381a9042e766da4031094f",
+    "bytes": 2533
+  },
+  {
+    "path": "docs/media/SpanWitness-OpenCV-processing.png",
+    "sha256": "59f4b3587f83474cb906f8e830ef261459ce2980cdcfab4a7753c16080432de3",
+    "bytes": 303328
   },
   {
     "path": "docs/media/SpanWitness-architecture.png",
@@ -28,6 +58,16 @@
     "path": "docs/media/SpanWitness-cover.png",
     "sha256": "ce06568134b593b7739e34fe9a58509bf103098a9b33b172514ed4c457215b58",
     "bytes": 2136060
+  },
+  {
+    "path": "docs/media/SpanWitness-final-demo.srt",
+    "sha256": "e3882ca21d530ff25d7835b3376d9359a8aa57c02ed948ea5c2a7718862598ee",
+    "bytes": 4179
+  },
+  {
+    "path": "docs/media/SpanWitness-final-narration.txt",
+    "sha256": "034efaef01905d4bee32e41e47b8d9a91ecb89ba53fa07f475b4fa3cb73d74b1",
+    "bytes": 2605
   },
   {
     "path": "docs/media/SpanWitness-real-photo-cover.png",
@@ -53,6 +93,11 @@
     "path": "docs/media/history-pair.jpg",
     "sha256": "dd7c8b7cf7ca0ab2ba4fb6c8c01bd2c175cf77d840ad184d2f05e54dc8b6921c",
     "bytes": 135686
+  },
+  {
+    "path": "docs/media/opencv-processing-trace.json",
+    "sha256": "5bd5e5563166c78dedd26f843399ef9e71be8ad7485946a68320c30529167aab",
+    "bytes": 2601
   },
   {
     "path": "docs/media/opening.jpg",

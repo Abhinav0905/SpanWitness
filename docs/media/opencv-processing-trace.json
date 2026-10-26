@@ -1,0 +1,86 @@
+{
+  "opencv": "5.0.0",
+  "input_sha256": "42ccb83d5cf0a90894458afe956d297ecbba2586660ce38162634121e96328f9",
+  "method": "Actual analyze() execution; wrappers record inputs and outputs of cv2 functions without modifying them.",
+  "source": "spanwitness/pole.py:fit_axis and pole_alignment; spanwitness/vision.py:analyze",
+  "operator_marks": {
+    "pole": [
+      [
+        0.5040650406504065,
+        0.4252657911194497
+      ],
+      [
+        0.6449864498644986,
+        0.6378986866791745
+      ]
+    ],
+    "vertical_reference": [
+      [
+        0.556910569105691,
+        0.2188868042526579
+      ],
+      [
+        0.5555555555555556,
+        0.4065040650406504
+      ]
+    ]
+  },
+  "image": {
+    "width": 647,
+    "height": 1400
+  },
+  "display_crop": {
+    "x": 270,
+    "y": 251,
+    "width": 202,
+    "height": 697
+  },
+  "calls": {
+    "Canny": 2,
+    "HoughLinesP": 2,
+    "fitLine": 2
+  },
+  "fits": [
+    {
+      "region": "pole",
+      "hough_segments": 3,
+      "fit_points": 281,
+      "fit_vector": [
+        0.3078257143497467,
+        0.9514427781105042
+      ],
+      "fit_center": [
+        378.5246887207031,
+        756.0889282226562
+      ]
+    },
+    {
+      "region": "reference",
+      "hough_segments": 1,
+      "fit_points": 184,
+      "fit_vector": [
+        0.024496087804436684,
+        -0.9996999502182007
+      ],
+      "fit_center": [
+        355.3999938964844,
+        429.70001220703125
+      ]
+    }
+  ],
+  "relative_image_angle_deg": 19.33,
+  "scope": "Diagnostic display from one selected photo. Crops share the same bounds. No physical lean or field accuracy is inferred.",
+  "attribution": {
+    "id": "field-house",
+    "file": "field-house.jpg",
+    "url": "https://huggingface.co/datasets/EPDCL/pd-defect/resolve/b9c64b2f9615ef5ade71fceade7d9d31b0dc9416/pole_lean_assessment/classification/val/Leaned/713.jpg",
+    "source": "https://huggingface.co/datasets/EPDCL/pd-defect",
+    "author": "Sampath Balaji Masabathula, Srija Vanapalli, Gangadhar Kanchi, Sreenivasa Rao V.A.N, Vijaya Lalitha V and Sasank Chilamkurthy",
+    "title": "PD-Defect field pole photograph 713",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "sha256": "42ccb83d5cf0a90894458afe956d297ecbba2586660ce38162634121e96328f9",
+    "changes": "Original JPEG copied byte-for-byte, no EXIF present. App displays separate operator marks and produces an annotated derivative. Publisher condition labels are not analysis inputs.",
+    "scope": "Selected demonstration image, not a blind evaluation or a physical lean measurement."
+  }
+}
