@@ -14,6 +14,12 @@ This is an independent hackathon prototype. No workplace code or images are incl
 
 *AI-generated concept art. The working demo uses labeled synthetic fixtures and credited field photographs.*
 
+## Watch the demo
+
+[1080p narrated demo on YouTube](https://youtu.be/00i3KlrgI1c). It starts with the problem, gives the real-life example, shows the approach and working application, then explains the technical path and results. The narration uses edited Suno Speech. The app captures use synthetic scenes with illustrative dates.
+
+The [Devpost project](https://devpost.com/software/spanwitness) contains the write-up and gallery. Submission status is verified separately in the contest portal.
+
 ## Try the local application
 
 The [private AWS preview](https://ec1f3mu6m7.execute-api.us-west-2.amazonaws.com) is deployed and verified. Access details are in [DEPLOYMENT.md](spanwitness/DEPLOYMENT.md). Its actual image processing runs in Lambda with private S3 and DynamoDB storage.
