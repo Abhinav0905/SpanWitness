@@ -1,0 +1,1809 @@
+{
+  "generated_at": "2026-10-26T04:41:01.697191+00:00",
+  "opencv": "5.0.0",
+  "python": "3.14.7",
+  "machine": "arm64",
+  "policy": "prototype-review-v1",
+  "synthetic_screens": {
+    "passed": 144,
+    "total": 144
+  },
+  "synthetic_comparisons": {
+    "passed": 36,
+    "total": 36
+  },
+  "screening_latency_ms": {
+    "median": 14.6,
+    "max": 41.8
+  },
+  "limits": [
+    "Procedural image variations share scene geometry; these are regression and stress checks, not independent field data.",
+    "Seeds, resize and compression change texture and image quality. They do not model real electrical faults or physical parallax.",
+    "Two licensed field photographs have no validated condition labels. No field precision or recall is reported.",
+    "Latency measures local OpenCV screening, excluding upload, comparison, weather, storage and AWS cold starts."
+  ],
+  "screens": [
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 8.1
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 6.9
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.4
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.8
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 18.4
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 18.7
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.1
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.1
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 13.7
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 13.6
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 18.6
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 18.4
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.7
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.2
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 13.9
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.5
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 21.2
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 20.0
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.6
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.7
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.4
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.7
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 20.2
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 20.2
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.7
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.6
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.3
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 15.0
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 20.2
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 19.5
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.8
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 7.7
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.5
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.1
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 20.4
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 19.1
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 7.5
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 7.7
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 14.2
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 14.3
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 19.8
+    },
+    {
+      "case": "gap",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 19.2
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 7.3
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 7.3
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 13.4
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 13.5
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 18.4
+    },
+    {
+      "case": "gap",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 18.1
+    },
+    {
+      "case": "gap",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 7.4
+    },
+    {
+      "case": "gap",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 7.1
+    },
+    {
+      "case": "gap",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 13.3
+    },
+    {
+      "case": "gap",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 13.4
+    },
+    {
+      "case": "gap",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 18.2
+    },
+    {
+      "case": "gap",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "critical_review",
+      "actual_priority": "critical_review",
+      "passed": true,
+      "processing_ms": 18.5
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.2
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.2
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 13.7
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 13.7
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 19.0
+    },
+    {
+      "case": "cover",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 19.0
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.5
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.3
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 13.9
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 14.4
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 19.1
+    },
+    {
+      "case": "cover",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 19.6
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.3
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 7.2
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 13.8
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 14.2
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 18.6
+    },
+    {
+      "case": "cover",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "moderate",
+      "actual_priority": "moderate",
+      "passed": true,
+      "processing_ms": 18.7
+    },
+    {
+      "case": "clear",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 7.0
+    },
+    {
+      "case": "clear",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 7.1
+    },
+    {
+      "case": "clear",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 14.0
+    },
+    {
+      "case": "clear",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 13.7
+    },
+    {
+      "case": "clear",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 18.7
+    },
+    {
+      "case": "clear",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 18.3
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 6.9
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 6.8
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 13.3
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 13.5
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 25.3
+    },
+    {
+      "case": "clear",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 41.6
+    },
+    {
+      "case": "clear",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 21.5
+    },
+    {
+      "case": "clear",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 11.5
+    },
+    {
+      "case": "clear",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 32.4
+    },
+    {
+      "case": "clear",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 17.3
+    },
+    {
+      "case": "clear",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 28.3
+    },
+    {
+      "case": "clear",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 20.7
+    },
+    {
+      "case": "blur",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 14.1
+    },
+    {
+      "case": "blur",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 8.0
+    },
+    {
+      "case": "blur",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 15.1
+    },
+    {
+      "case": "blur",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 14.7
+    },
+    {
+      "case": "blur",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 19.4
+    },
+    {
+      "case": "blur",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 22.2
+    },
+    {
+      "case": "blur",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 7.8
+    },
+    {
+      "case": "blur",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 8.2
+    },
+    {
+      "case": "blur",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 16.6
+    },
+    {
+      "case": "blur",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 16.9
+    },
+    {
+      "case": "blur",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 25.0
+    },
+    {
+      "case": "blur",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 24.1
+    },
+    {
+      "case": "blur",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 12.7
+    },
+    {
+      "case": "blur",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 11.0
+    },
+    {
+      "case": "blur",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 16.2
+    },
+    {
+      "case": "blur",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 14.7
+    },
+    {
+      "case": "blur",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 24.4
+    },
+    {
+      "case": "blur",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "unassessed",
+      "actual_priority": "unassessed",
+      "passed": true,
+      "processing_ms": 23.3
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 11.6
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 14.1
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 34.9
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 23.0
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 35.4
+    },
+    {
+      "case": "pole-lean",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 35.1
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 12.4
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 11.5
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 19.7
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 19.9
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 41.8
+    },
+    {
+      "case": "pole-lean",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 29.3
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 11.0
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 11.0
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 27.8
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 29.4
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 26.5
+    },
+    {
+      "case": "pole-lean",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "major",
+      "actual_priority": "major",
+      "passed": true,
+      "processing_ms": 26.1
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 10.1
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 9.7
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 18.6
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 15.6
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 25.7
+    },
+    {
+      "case": "camera-roll",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 21.0
+    },
+    {
+      "case": "camera-roll",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 9.9
+    },
+    {
+      "case": "camera-roll",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 9.7
+    },
+    {
+      "case": "camera-roll",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 18.9
+    },
+    {
+      "case": "camera-roll",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 15.6
+    },
+    {
+      "case": "camera-roll",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 25.3
+    },
+    {
+      "case": "camera-roll",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 21.4
+    },
+    {
+      "case": "camera-roll",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 10.0
+    },
+    {
+      "case": "camera-roll",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 9.9
+    },
+    {
+      "case": "camera-roll",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 18.4
+    },
+    {
+      "case": "camera-roll",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 16.0
+    },
+    {
+      "case": "camera-roll",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 25.5
+    },
+    {
+      "case": "camera-roll",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "expected_priority": "routine",
+      "actual_priority": "routine",
+      "passed": true,
+      "processing_ms": 21.0
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 222
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 271
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 286
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 389
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 344
+    },
+    {
+      "case": "perspective",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 457
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 216
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 253
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 296
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 391
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 361
+    },
+    {
+      "case": "perspective",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 444
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 216
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 286
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 295
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 386
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 362
+    },
+    {
+      "case": "perspective",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "status": "projection_sensitive",
+      "passed": true,
+      "inliers": 443
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 311
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 377
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 362
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 484
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 414
+    },
+    {
+      "case": "persistent",
+      "seed": 71,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 552
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 304
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 359
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 369
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 489
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 432
+    },
+    {
+      "case": "persistent",
+      "seed": 208,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 540
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 65,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 306
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 0.7,
+      "jpeg_quality": 88,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 391
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 65,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 366
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 1,
+      "jpeg_quality": 88,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 484
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 65,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 436
+    },
+    {
+      "case": "persistent",
+      "seed": 309,
+      "scale": 1.2,
+      "jpeg_quality": 88,
+      "status": "overlap_persists",
+      "passed": true,
+      "inliers": 539
+    }
+  ],
+  "unlabeled_field_runs": [
+    {
+      "case": "field-crossing",
+      "priority": "routine",
+      "findings": [],
+      "condition_ground_truth": null,
+      "meaning": "Functional run only; neither correctness nor field accuracy is scored."
+    },
+    {
+      "case": "field-span",
+      "priority": "routine",
+      "findings": [],
+      "condition_ground_truth": null,
+      "meaning": "Functional run only; neither correctness nor field accuracy is scored."
+    }
+  ]
+}

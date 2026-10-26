@@ -1,0 +1,13 @@
+.venv/
+.tools-venv/
+.ml-venv/
+samconfig.toml
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+spanwitness/data/
+spanwitness/artifacts/
+.env
+.aws-sam/
+node_modules/

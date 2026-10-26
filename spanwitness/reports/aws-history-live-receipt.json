@@ -1,0 +1,236 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-26T04:52:24.584886+00:00",
+  "preview_url": "https://ec1f3mu6m7.execute-api.us-west-2.amazonaws.com",
+  "health": {
+    "status": "ok",
+    "app_version": "0.2.0",
+    "opencv": "5.0.0",
+    "storage": "aws_s3_dynamodb",
+    "dispatch": "review_queue_only",
+    "model": "classical_cv_with_bounded_policy"
+  },
+  "assets_sha256": {
+    "app.js": "08b871c3b458c5ba96bb41eb95e0a0931954773519041cae476af08595e7021f",
+    "history.js": "9b53c63959548bbc2e6d86f3b9f0fc0e06e06716a143a3320e99eb04d99dca07",
+    "style.css": "612270b91daf428e666d9374faa213b00830fbc0207b1a65a01b44e12a81c971"
+  },
+  "observations": {
+    "gap": "c34c64192b3e41409f320f53db507483",
+    "first_view": "9ad975567b054823b8e9235fccb32175",
+    "second_view": "9bf534ca6da34a6caef40bb63d2c5201"
+  },
+  "second_view_status": "projection_sensitive",
+  "history": [
+    {
+      "case": "alignment-change",
+      "status": "change_detected",
+      "change_deg": 4.95,
+      "comparison_id": "b68c8b5b4c8a4a0085e69103c2cd86d9",
+      "baseline_id": "f8ba666ced2c4e22b9430ab50e515213",
+      "current_id": "e5726067114747e7b4503dc2019f8840"
+    },
+    {
+      "case": "camera-roll",
+      "status": "no_material_change",
+      "change_deg": 0.0,
+      "comparison_id": "5db5484c45ab41bda3f3c2b0bd25918e",
+      "baseline_id": "57232c2e376947179a04f1e627c12f2a",
+      "current_id": "3b3156307b3e4d809939b4e4d01dbb12"
+    }
+  ],
+  "checks": [
+    "unauthenticated request rejected",
+    "real OpenCV 5 on Lambda",
+    "S3 image and overlay readback",
+    "DynamoDB record readback",
+    "evidence export",
+    "measurement-driven second-view decision",
+    "frontend assets match tested source",
+    "pole history change and camera-roll control",
+    "comparison export and DynamoDB history persistence"
+  ],
+  "calls": [
+    {
+      "path": "/api/health",
+      "authenticated": false,
+      "status": 401
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "elapsed_ms": 42.3
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "elapsed_ms": 49.7
+    },
+    {
+      "path": "/static/app.js",
+      "status": 200,
+      "elapsed_ms": 36.3
+    },
+    {
+      "path": "/static/history.js",
+      "status": 200,
+      "elapsed_ms": 34.8
+    },
+    {
+      "path": "/static/style.css",
+      "status": 200,
+      "elapsed_ms": 35.9
+    },
+    {
+      "path": "/api/examples",
+      "status": 200,
+      "elapsed_ms": 483.2
+    },
+    {
+      "path": "/api/examples/gap/image",
+      "status": 200,
+      "elapsed_ms": 56.0
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 310.3
+    },
+    {
+      "path": "/api/observations/c34c64192b3e41409f320f53db507483/image",
+      "status": 200,
+      "elapsed_ms": 71.5
+    },
+    {
+      "path": "/api/observations/c34c64192b3e41409f320f53db507483/image?overlay=true",
+      "status": 200,
+      "elapsed_ms": 72.2
+    },
+    {
+      "path": "/api/observations/c34c64192b3e41409f320f53db507483/export",
+      "status": 200,
+      "elapsed_ms": 38.6
+    },
+    {
+      "path": "/api/examples/perspective/image?view=1",
+      "status": 200,
+      "elapsed_ms": 52.6
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 153.0
+    },
+    {
+      "path": "/api/examples/perspective/image?view=2",
+      "status": 200,
+      "elapsed_ms": 97.6
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 494.8
+    },
+    {
+      "path": "/api/observations/9bf534ca6da34a6caef40bb63d2c5201",
+      "status": 200,
+      "elapsed_ms": 57.3
+    },
+    {
+      "path": "/api/history/examples",
+      "status": 200,
+      "elapsed_ms": 32.2
+    },
+    {
+      "path": "/api/history/examples/alignment-change/image?view=baseline",
+      "status": 200,
+      "elapsed_ms": 32.7
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 233.0
+    },
+    {
+      "path": "/api/history/examples/alignment-change/image?view=current",
+      "status": 200,
+      "elapsed_ms": 37.7
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 190.0
+    },
+    {
+      "path": "/api/history/compare",
+      "status": 200,
+      "elapsed_ms": 593.7
+    },
+    {
+      "path": "/api/history/comparisons/b68c8b5b4c8a4a0085e69103c2cd86d9/export",
+      "status": 200,
+      "elapsed_ms": 36.2
+    },
+    {
+      "path": "/api/assets/history?asset_id=AWS%20history%20smoke%3A%20alignment-change",
+      "status": 200,
+      "elapsed_ms": 47.3
+    },
+    {
+      "path": "/api/history/examples/camera-roll/image?view=baseline",
+      "status": 200,
+      "elapsed_ms": 38.8
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 202.6
+    },
+    {
+      "path": "/api/history/examples/camera-roll/image?view=current",
+      "status": 200,
+      "elapsed_ms": 38.5
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 190.9
+    },
+    {
+      "path": "/api/history/compare",
+      "status": 200,
+      "elapsed_ms": 290.6
+    },
+    {
+      "path": "/api/history/comparisons/5db5484c45ab41bda3f3c2b0bd25918e/export",
+      "status": 200,
+      "elapsed_ms": 35.9
+    },
+    {
+      "path": "/api/assets/history?asset_id=AWS%20history%20smoke%3A%20camera-roll",
+      "status": 200,
+      "elapsed_ms": 54.2
+    }
+  ],
+  "limits": "Controlled synthetic workflow and cloud/browser verification. No field accuracy, physical lean, crack diagnosis, structural-failure time or fire forecast.",
+  "deployment": {
+    "stack_status": "UPDATE_COMPLETE",
+    "source_archive": "SpanWitness-history-1db4d465.zip",
+    "source_archive_sha256": "1db4d465b59aeb13769fee97bf0d1c27f7a3064cc29ab608bf41911ce8dbb4e0",
+    "source_manifest_sha256": "ef05d8becfc08bbfa98bb01bb8c38ea161204564532989aef7698a5d8d561b88",
+    "image_digest": "sha256:7354e568d5ad00624f852e7d3e3a2a7918697f9c63b67cd9d1f546a1f915267b"
+  },
+  "browser_verification": {
+    "status": "passed",
+    "verified_at": "2026-10-26T04:55:40.099988+00:00",
+    "checks": [
+      "existing private sign-in retained",
+      "history controlled example ran through the live API",
+      "baseline/current evidence restored after reload",
+      "human-confirmed DEMO ONLY change review persisted",
+      "review export links to both observations",
+      "previous conductor review retained"
+    ],
+    "review_comparison_id": "52c90f6347bf4c7fb6658e82838927fe"
+  }
+}

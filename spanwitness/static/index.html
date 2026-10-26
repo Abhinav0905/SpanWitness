@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Evidence-driven pole and vegetation inspection. Analyze an observation, resolve a suspicious view and stage a crew review.">
+  <title>SpanWitness | Field inspection</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c3431'/%3E%3Cpath d='M8 23V9h16v14M16 9v17M5 14q11 8 22 0' stroke='%23c8e69e' fill='none' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+  <script src="/static/history.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="/" aria-label="SpanWitness home"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 25V8h18v17M16 8v19M3 14q13 10 26 0"/></svg></span><span>SpanWitness<small>FIELD INSPECTION</small></span></a>
+    <nav aria-label="Main navigation"><button class="nav active" data-tab="inspect">Inspection</button><button class="nav" data-tab="history">Asset history</button><button class="nav" data-tab="archive">Archive <span id="archiveCount">0</span></button><button class="nav" data-tab="queue">Review queue <span id="queueCount">0</span></button></nav>
+    <div class="prototype"><i></i> Research prototype</div>
+  </header>
+
+  <main>
+    <section id="inspect" class="tab-panel">
+      <div class="page-heading"><div><div class="eyebrow">THE INSPECTION PROBLEM</div><h1>Has this pole changed<br>since its last inspection?</h1><p>A single photo can hide a change, exaggerate a tilt or make a background tree look close to a wire.</p></div><div class="heading-actions"><button id="cameraButton" class="button secondary"><span aria-hidden="true">◉</span> Use camera</button><button id="uploadButton" class="button dark"><span aria-hidden="true">↑</span> Add observation</button></div></div>
+      <div class="problem-explainer"><div><span class="eyebrow">A REAL-LIFE QUESTION</span><h2>A pole beside a school looks different this week.</h2><p>Did its alignment change, or did the camera move? The inspection team needs comparable evidence before deciding what to review.</p></div><div><span class="eyebrow">HOW SPANWITNESS HELPS</span><h2>Compare the observations. Keep the reason.</h2><p>Save each observation against an asset, compare a dated baseline with a later image and attach the measurements to a human review request.</p></div><ol class="problem-steps"><li><span>01</span> Record the asset and observation</li><li><span>02</span> Check what the images support</li><li><span>03</span> Review the change and its evidence</li></ol><details class="problem-technical"><summary>Technical details: OpenCV 5 and AWS</summary><p>OpenCV fits operator-marked pole and reference edges, checks stable background correspondence and compares apparent image alignment. Other tools screen conductor continuity and nearby vegetation-colored regions. AWS Lambda runs the analysis, private S3 stores the images and DynamoDB keeps observations, comparisons and review requests.</p><p>Repeatable capture and marked references are required for the history comparison. This prototype does not diagnose cracks, measure physical pole lean, predict a fall date or calculate fire probability.</p></details></div>
+
+      <div class="workspace">
+        <div class="viewer-column">
+          <div class="viewer-card">
+            <div class="viewer-top"><div class="asset-input"><label for="assetId">ASSET</label><input id="assetId" maxlength="80" value="Pole SW-27" aria-label="Asset identifier"></div><span id="sourceBadge" class="source-badge">Synthetic scene</span></div>
+            <details id="observationDetails" class="observation-details"><summary>Observation date and asset context <span>+</span></summary><div class="observation-fields"><label for="observedAt">Observation time (provided by you)<input id="observedAt" type="datetime-local"></label><label for="locationLabel">Asset location or context<input id="locationLabel" maxlength="120" placeholder="e.g. Beside the school entrance"></label></div><p class="muted">Use the photo's observation time for historical comparisons. This is separate from when the record is saved. Dates and location are supplied by the operator.</p></details>
+            <div class="image-toolbar"><div class="segmented"><button id="originalButton" class="selected">Original</button><button id="overlayButton" disabled>Evidence overlay</button></div><button id="markButton" class="text-button">⌖ Mark conductor</button></div>
+            <div class="geometry-toolbar"><span>Inspect pole alignment:</span><button id="markPole" class="text-button">Mark pole axis</button><button id="markReference" class="text-button">Mark vertical reference</button></div>
+            <div class="frame" id="frame"><img id="sceneImage" alt="Selected inspection observation"><canvas id="spanCanvas" aria-label="Click to mark points along the conductor"></canvas><span id="frameLabel" class="frame-label">OBSERVATION 01</span><div id="busyShade" class="busy-shade" hidden><div class="spinner"></div><span>Inspecting the image…</span></div></div>
+            <div class="viewer-bottom"><span id="spanHint"><i class="line-swatch"></i> Selected conductor path</span><span id="imageMeta">Loading image</span><button id="finishMark" class="text-button" hidden>Finish marking →</button></div>
+            <div class="analysis-controls"><div><span class="eyebrow">SCREENING SCOPE</span><p id="screeningScope">Conductor continuity + nearby color-based vegetation candidates</p></div><button id="analyzeButton" class="button green" disabled>Analyze observation <span aria-hidden="true">↗</span></button></div>
+          </div>
+          <div class="example-panel"><div class="example-heading"><div><span class="eyebrow">TRY AN INSPECTION</span><h2>Test the decision, not just the picture.</h2></div><span class="small-tag">8 controlled cases + 2 field photos</span></div><div id="examples" class="example-grid"></div><p id="attribution" class="attribution">Original synthetic scene. No field accuracy claim is attached to this example.</p></div>
+        </div>
+
+        <aside class="review-column" aria-label="Inspection results">
+          <div id="decisionCard" class="decision-card idle"><div class="decision-top"><span class="eyebrow">PROVISIONAL REVIEW PRIORITY</span><span id="decisionIcon" class="decision-icon">⌁</span></div><h2 id="priorityLabel">A decision starts<br>with an observation.</h2><p id="decisionReason">Analyze the image to see the findings and the next useful step.</p><div id="nextAction" class="next-action" hidden><span>NEXT STEP</span><strong id="actionLabel"></strong></div><button id="followupButton" class="button full dark" hidden>Capture a second view →</button><button id="ticketButton" class="button full secondary" disabled>Stage a crew review</button><p class="scope-note">A review priority is a request for human assessment. It is not a certified asset condition.</p></div>
+          <div class="metrics-card"><div class="card-title"><h2>Measured in this image</h2><span id="runtimeLabel" class="runtime-label">Awaiting analysis</span></div><div class="metric-row"><span id="lineMetricLabel">Visible line support</span><strong id="lineMetric">—</strong></div><div class="metric-row"><span id="overlapMetricLabel">Near-span green candidates</span><strong id="overlapMetric">—</strong></div><div class="metric-row"><span id="gapMetricLabel">Minimum image gap</span><strong id="gapMetric">—</strong></div><p class="muted">Image measurements describe the view. Physical clearance, true pole lean and electrical condition remain unmeasured.</p></div>
+          <div id="comparisonCard" class="comparison-card" hidden></div>
+          <details class="weather-card"><summary>Attach fire-weather context <span>+</span></summary><p class="muted">Optional US coordinates. Official NWS alerts add context to the next analysis. They do not measure fire spread.</p><div class="coordinate-inputs"><label for="latitude">Latitude<input id="latitude" type="number" min="-90" max="90" step="any" placeholder="e.g. 34.10"></label><label for="longitude">Longitude<input id="longitude" type="number" min="-180" max="180" step="any" placeholder="e.g. -118.30"></label></div><p id="weatherResult" class="muted" aria-live="polite">No location attached.</p></details>
+          <div class="findings-card"><div class="card-title"><h2>Evidence notes</h2><span id="findingCount">0</span></div><div id="findings"><div class="empty-small">Findings will include the observation, its limits and a suggested next step.</div></div></div>
+          <details id="traceDetails" class="trace-card"><summary>How the next step was chosen <span>↗</span></summary><ol id="trace"><li>Waiting for an observation.</li></ol><p class="muted">A bounded, rule-based workflow. No language model diagnosis is claimed.</p></details>
+          <a id="exportLink" class="export-link" hidden>Download evidence record <span>↓ JSON</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="history" class="tab-panel" hidden>
+      <div class="page-heading"><div><div class="eyebrow">SAME ASSET / ANOTHER INSPECTION</div><h1>What changed since last time?</h1><p>Keep the asset's history together. Compare supported pole observations before requesting a review.</p></div><button id="historyRefresh" class="button secondary">Refresh history</button></div>
+      <div class="history-selector"><label for="historyAsset">Select an asset<select id="historyAsset"><option value="">No saved assets yet</option></select></label><div><strong id="historyAssetContext">Choose an asset or try a controlled case below.</strong><p id="historyScope" class="muted">History covers the newest 100 saved observations. Asset identity is assigned by the operator.</p></div><button id="historyAdd" class="button dark" disabled>Add an inspection</button></div>
+      <div id="historyWorkspace" hidden>
+        <div class="history-layout"><aside class="timeline-card"><div class="card-title"><h2>Inspection timeline</h2><span id="historyCount">0</span></div><div id="historyTimeline" class="history-timeline"></div></aside>
+          <div class="history-comparison-workspace">
+            <div class="history-pair"><article class="history-view"><label for="baselineSelect">BASELINE<select id="baselineSelect"></select></label><img id="baselineImage" alt="Baseline pole evidence"><p id="baselineMeta"></p></article><article class="history-view"><label for="currentSelect">CURRENT<select id="currentSelect"></select></label><img id="currentImage" alt="Current pole evidence"><p id="currentMeta"></p></article></div>
+            <div class="history-controls"><label class="checkbox-label"><input id="repeatableCapture" type="checkbox"><span>I confirmed the same pole, the same fixed reference and a repeatable camera position. Image matching supports this check; it does not prove the capture setup.</span></label><div class="history-control-bottom"><p id="historyEligibility" class="muted">Choose two dated pole observations with marked axes.</p><button id="compareHistory" class="button green" disabled>Compare inspections <span aria-hidden="true">↗</span></button></div></div>
+            <div id="historyResult" class="history-result" aria-live="polite" hidden></div>
+          </div>
+        </div>
+      </div>
+      <div class="history-fixtures"><div><span class="eyebrow">CONTROLLED COMPARISON CASES</span><h2>A change, a camera rotation and two reasons to ask again.</h2><p>Each button saves two original synthetic observations with illustrative dates, then compares the actual image measurements. These are workflow checks, not field-accuracy results.</p></div><div id="historyExamples" class="history-example-grid"></div><p id="historyDemoStatus" class="muted" role="status"></p></div>
+    </section>
+
+    <section id="archive" class="tab-panel" hidden><div class="page-heading"><div><div class="eyebrow">OBSERVATION HISTORY</div><h1>Find the evidence again.</h1><p>Search the actual observations analyzed in this prototype.</p></div></div><form id="searchForm" class="search-form"><label class="sr-only" for="searchInput">Search observations</label><span aria-hidden="true">⌕</span><input id="searchInput" placeholder="Try 'major vegetation' or an asset ID" maxlength="100"><button class="button dark">Search archive</button></form><div class="search-hints"><span>Quick filters:</span><button data-query="major vegetation">Major vegetation</button><button data-query="critical conductor">Conductor gaps</button><button data-query="pole alignment">Pole alignment</button><button data-query="unassessed">Needs another view</button></div><div id="searchMeta" class="archive-meta"></div><div id="archiveGrid" class="archive-grid"></div></section>
+
+    <section id="queue" class="tab-panel" hidden><div class="page-heading"><div><div class="eyebrow">HUMAN REVIEW</div><h1>The next team's starting point.</h1><p>Evidence, a proposed priority and a reviewer's note travel together.</p></div><span class="queue-notice">Demo review queue · external delivery is not connected</span></div><div id="ticketList" class="ticket-list"></div></section>
+
+    <footer><span><span class="footer-dot"></span> OpenCV <span id="opencvVersion">5</span> image analysis</span><span>Independent prototype · public and self-created data</span><a href="/static/samples/ATTRIBUTION.json" target="_blank" rel="noopener">Photo credits ↗</a></footer>
+  </main>
+
+  <input id="imageInput" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+  <dialog id="ticketDialog"><form id="ticketForm"><div class="dialog-heading"><span class="eyebrow">STAGE A REVIEW</span><button class="icon-button" type="button" data-close="ticketDialog" aria-label="Close">×</button></div><h2>Keep the evidence with the request.</h2><p id="ticketSummary" class="muted"></p><label for="reviewer">Reviewer name</label><input id="reviewer" required maxlength="80" placeholder="Your name"><label for="reviewNote">What should the team inspect?</label><textarea id="reviewNote" required maxlength="1000" rows="4"></textarea><label class="checkbox-label"><input id="confirmPriority" type="checkbox" required><span>I reviewed the evidence and understand the priority is provisional.</span></label><button class="button green full" type="submit">Add to review queue →</button><p class="muted small">This saves a review record in the application. It does not contact a crew.</p></form></dialog>
+  <dialog id="cameraDialog"><div class="dialog-heading"><span class="eyebrow">CAMERA OBSERVATION</span><button class="icon-button" id="closeCamera" aria-label="Close camera">×</button></div><h2>Keep the selected span in view.</h2><video id="cameraVideo" autoplay playsinline muted></video><p class="muted">Use a clear, ordinary viewing position. The prototype screens one frame every three seconds, up to ten frames.</p><div class="camera-actions"><button id="startScreening" class="button green">Start screening</button><button id="stopScreening" class="button secondary" disabled>Stop</button></div><p id="cameraState" class="muted" aria-live="polite"></p></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

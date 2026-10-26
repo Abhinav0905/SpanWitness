@@ -1,0 +1,347 @@
+[
+  {
+    "path": ".dockerignore",
+    "sha256": "98e4eec9d303300f9e81f1f560fe63347000da21cbd56ec518b486e2154f3bfe",
+    "bytes": 114
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "ee6f06fbbbe138a7ce7f7066c057d3cd64f3f263fa128da1ad7b7cd13e15cfdc",
+    "bytes": 159
+  },
+  {
+    "path": "spanwitness/CAPTURE_GUIDE.md",
+    "sha256": "82c6271b0261cadff2a10af45472cdcb607f4e0b562743b4a7e3f1f00dc96311",
+    "bytes": 1593
+  },
+  {
+    "path": "spanwitness/DATA.md",
+    "sha256": "09d7f6feb49a4467c50068949342829793de686f2ddcbb598d167d3e7dd6053a",
+    "bytes": 2505
+  },
+  {
+    "path": "spanwitness/DEPLOYMENT.md",
+    "sha256": "595508e1073bc555a4cbc028a7c41856c9b6545e6e3b0c1f8d8a595aaf327d73",
+    "bytes": 6316
+  },
+  {
+    "path": "spanwitness/Dockerfile",
+    "sha256": "06b136b27daca7bdfb2cf45b19cc6e925902de0f781597d511178ecb58887a63",
+    "bytes": 519
+  },
+  {
+    "path": "spanwitness/README.md",
+    "sha256": "3e81727e2a21ce2a9484d475fef881c0fef5e5b5ee7c21a8a7aeff83c25214ce",
+    "bytes": 7853
+  },
+  {
+    "path": "spanwitness/TECHNICAL_REPORT.md",
+    "sha256": "78b9064f39db6c383203a9d76c238441e15523a85b50d64004205a5f31d621c7",
+    "bytes": 8186
+  },
+  {
+    "path": "spanwitness/__init__.py",
+    "sha256": "9edecbc5afccf3832190286472c3cfd38409c567f44e3e378d5f1bbb2878b557",
+    "bytes": 85
+  },
+  {
+    "path": "spanwitness/app.py",
+    "sha256": "fa4a24d005aadd28a9109563afbfbd971b7e771b08dd54160dd9d381a6fbd190",
+    "bytes": 17605
+  },
+  {
+    "path": "spanwitness/aws_store.py",
+    "sha256": "0cbd5ee029fc91b3db3f5e772ea7e491e58d1646ef4c0643ea34baed9930a8fa",
+    "bytes": 2287
+  },
+  {
+    "path": "spanwitness/datasets/POLE_MODEL_PLAN.md",
+    "sha256": "b79b6206660718a43defc9ad017334bbf45c8d51caa98228066c15887d92c4d5",
+    "bytes": 2915
+  },
+  {
+    "path": "spanwitness/datasets/SOURCES.md",
+    "sha256": "bb0cac2c6e0bba31c1a47ada25faffcdfa17ec8ed2608b324f62635b72e72512",
+    "bytes": 3395
+  },
+  {
+    "path": "spanwitness/datasets/pd_defect/MANIFEST.json",
+    "sha256": "905b4bc5be6b918fcafd9166a58155d4e7d1b32accc23b1690163a02bd259c4a",
+    "bytes": 27655
+  },
+  {
+    "path": "spanwitness/datasets/pd_defect/pole-development-manifest.json",
+    "sha256": "0d3ccdef386e63cf0b8f8531f6b39c4eec2c4df7ec6c6b82688507e816ed3f18",
+    "bytes": 1527385
+  },
+  {
+    "path": "spanwitness/datasets/pd_defect/vegetation-sample-annotations.json",
+    "sha256": "019db8f7f8b7af9b31ce1c97a9d61b11caf4136eb8d4195332ca320c89d1b012",
+    "bytes": 280914
+  },
+  {
+    "path": "spanwitness/examples.py",
+    "sha256": "8e65d288a6c892a85b0162038dffd48d86a3348d85846c4b27ea869db0c9f42a",
+    "bytes": 8094
+  },
+  {
+    "path": "spanwitness/history.py",
+    "sha256": "533af2bcf5b1ba48eb13c62b8019d386eab1a79d07f73a3970d9f5a889ef6ead",
+    "bytes": 10752
+  },
+  {
+    "path": "spanwitness/history_examples.py",
+    "sha256": "e2f96c2d3894cc00cf9d4e9efb9cfd85ca2aa6916e35353f358221688d257e56",
+    "bytes": 3625
+  },
+  {
+    "path": "spanwitness/lambda_handler.py",
+    "sha256": "6072d000182b724dbdca460af0a780009498f18671d3830175d190d59edd37b3",
+    "bytes": 435
+  },
+  {
+    "path": "spanwitness/model_input.py",
+    "sha256": "d897ce0b77117a509f76ab5f0e7bb633bfcfe8643a00d28238c839dfb1fa9584",
+    "bytes": 1003
+  },
+  {
+    "path": "spanwitness/pole.py",
+    "sha256": "6c15cfd9273f83c9757905bb9702d475cdb9fae765921c8fd662273bc651ee7d",
+    "bytes": 4655
+  },
+  {
+    "path": "spanwitness/policy.py",
+    "sha256": "b474bea0bf0a887ea7b3639dac46858b842f6206849fa9cf428d8d2e6644c112",
+    "bytes": 6094
+  },
+  {
+    "path": "spanwitness/reports/AWS_LIVE.md",
+    "sha256": "a2c3b43a5330027494cfcb9920a1dd1f3ccac2815f30055a34e86a9d662bab59",
+    "bytes": 3727
+  },
+  {
+    "path": "spanwitness/reports/EVALUATION.md",
+    "sha256": "a1d7a1325a671536f0d1475f259cd2f8706c1611114076f0ff6750f78308c777",
+    "bytes": 987
+  },
+  {
+    "path": "spanwitness/reports/HISTORY_EVALUATION.md",
+    "sha256": "6048f8149e3c61d50bb15d198d812f944670819e77de8c4feda04e2f082ced4f",
+    "bytes": 1303
+  },
+  {
+    "path": "spanwitness/reports/HISTORY_RELEASE.md",
+    "sha256": "a079e6e7503d398dea19ff19fbd5fd92fbbc946934161aff0a0d00ec1f3a1e4b",
+    "bytes": 2565
+  },
+  {
+    "path": "spanwitness/reports/MODEL_DEVELOPMENT.md",
+    "sha256": "cdf74b9ce4f3241f9898e566fc07f938d4a170b567fd5d43b14a38c6455d18cc",
+    "bytes": 2456
+  },
+  {
+    "path": "spanwitness/reports/VALIDATION.md",
+    "sha256": "9592d474a1ae6717567ac2f1aec52efba2d1292a6994195deb95040ceb1163e6",
+    "bytes": 5321
+  },
+  {
+    "path": "spanwitness/reports/aws-history-live-receipt.json",
+    "sha256": "efed57e238bfed17df9e12952374ec7db65215e98418f1c01bd62c657a545526",
+    "bytes": 6455
+  },
+  {
+    "path": "spanwitness/reports/aws-live-receipt.json",
+    "sha256": "6312a992f7b2e0cd03856fdd73108d746c18d1290380a1b7dcfcf2a3bdffa8cc",
+    "bytes": 3791
+  },
+  {
+    "path": "spanwitness/reports/baseline-EVALUATION.md",
+    "sha256": "73a5466a7efbfd3f65fd7c663397aa68eb4b445b5ead852f487397b24e74aa22",
+    "bytes": 6227
+  },
+  {
+    "path": "spanwitness/reports/baseline-evaluation.json",
+    "sha256": "f20e111bf14fbaec8103e8772650c7b26c65b0591812f546775e7eff09586d3a",
+    "bytes": 40873
+  },
+  {
+    "path": "spanwitness/reports/evaluation.json",
+    "sha256": "d7f009ac75f439a42d91cdcb6e050492f46fa40f364009447ec7ed579a9f5bac",
+    "bytes": 40862
+  },
+  {
+    "path": "spanwitness/reports/history-baseline.json",
+    "sha256": "65f25cff10881f0be4d8fbfa23e0fd41db5b490c36cc7823c21a4e4e1c286576",
+    "bytes": 3326
+  },
+  {
+    "path": "spanwitness/reports/history-evaluation.json",
+    "sha256": "39bdff01f8ae565cff84a96f5d2f26a9631c00560fb87474497e5c4bf158a1f4",
+    "bytes": 114431
+  },
+  {
+    "path": "spanwitness/reports/pole-model-development.json",
+    "sha256": "fb30fa3f06a678dabb7ecc4355d215e7e0c667a7053ce29141bdc16ad8427b32",
+    "bytes": 96030
+  },
+  {
+    "path": "spanwitness/reports/pole-model-resnet18-384.json",
+    "sha256": "b790a5c9996e2184fa73b6338fcefeed9810ffbff2d0612edab03157a5f3d47e",
+    "bytes": 95982
+  },
+  {
+    "path": "spanwitness/requirements-aws.txt",
+    "sha256": "debeea0711d0737dde092acc02559c2bae9570928fc88e50157b7859ef79f0ca",
+    "bytes": 51
+  },
+  {
+    "path": "spanwitness/requirements-dev.txt",
+    "sha256": "ad5a7940412e8da6387620175bbc6d73795c90b6c935402bbf851314e57d5b9a",
+    "bytes": 38
+  },
+  {
+    "path": "spanwitness/requirements-lock.txt",
+    "sha256": "1d2883f8568847b87ab3cfc76feab127385b80d9181ba0abdc7f27865d165d58",
+    "bytes": 616
+  },
+  {
+    "path": "spanwitness/requirements-training.txt",
+    "sha256": "b6cbd85a71be3dda2d1d59df7e6a797489b39556082b608c03ee408742ad7467",
+    "bytes": 108
+  },
+  {
+    "path": "spanwitness/requirements.txt",
+    "sha256": "9db70a8b0175ef4c7ceb77d1f21265c6d9cc434a24ffbf92cd66985abee88683",
+    "bytes": 133
+  },
+  {
+    "path": "spanwitness/scripts/cloud_deploy.py",
+    "sha256": "381f88c453721f14c3c7196356ac6f5aadac570df7c44e134626d08f754bb7e6",
+    "bytes": 8898
+  },
+  {
+    "path": "spanwitness/scripts/cloud_verify.py",
+    "sha256": "c3dfeb91dcac673469045a836c74625f9b6b90382697d1f81293102b64218172",
+    "bytes": 8472
+  },
+  {
+    "path": "spanwitness/scripts/container_smoke.py",
+    "sha256": "aae192e0b6ec99f5feccebff1b62f8acd1a323c141550af9f0cba5c6b2f84491",
+    "bytes": 2111
+  },
+  {
+    "path": "spanwitness/scripts/evaluate.py",
+    "sha256": "50461e24a4f151d074947a85faf402c21916cb1827a9cafde6977bed03813905",
+    "bytes": 5720
+  },
+  {
+    "path": "spanwitness/scripts/evaluate_history.py",
+    "sha256": "694868ae64ec20480284670b3d04808d6689144037fcb6f02c258b1de221f958",
+    "bytes": 4928
+  },
+  {
+    "path": "spanwitness/scripts/fetch_public_data.py",
+    "sha256": "04ebea0b0d40ef8d57ca36d4330c2ada93536b9640354210bb3725ee89657a37",
+    "bytes": 7092
+  },
+  {
+    "path": "spanwitness/scripts/package_source.py",
+    "sha256": "9e4132dcaeb74fc82d2749d66ba2a2b8369d51357619ab2d9248797f068c50e6",
+    "bytes": 1864
+  },
+  {
+    "path": "spanwitness/scripts/prepare_deploy.py",
+    "sha256": "cf9a2a58766945c09ca055634b34ed1ed4e8c9d06fa590e6a550f5f203787022",
+    "bytes": 658
+  },
+  {
+    "path": "spanwitness/scripts/prepare_pole_training_data.py",
+    "sha256": "421304c5affded889779e9db41752c455e02e8cc2cdc3c56415868ea112efbde",
+    "bytes": 2992
+  },
+  {
+    "path": "spanwitness/scripts/run_local.sh",
+    "sha256": "c4c2ef2067103218791b6d12bae1190d985ea2f4b81d4dfa8ac7256a49aed919",
+    "bytes": 177
+  },
+  {
+    "path": "spanwitness/scripts/train_pole_model.py",
+    "sha256": "45a31ecc95ffb58ef5e35ee310741501afd935387401bca0935720d3f4de607e",
+    "bytes": 11104
+  },
+  {
+    "path": "spanwitness/static/app.js",
+    "sha256": "08b871c3b458c5ba96bb41eb95e0a0931954773519041cae476af08595e7021f",
+    "bytes": 23036
+  },
+  {
+    "path": "spanwitness/static/history.js",
+    "sha256": "9b53c63959548bbc2e6d86f3b9f0fc0e06e06716a143a3320e99eb04d99dca07",
+    "bytes": 13907
+  },
+  {
+    "path": "spanwitness/static/index.html",
+    "sha256": "23b1084d727c751dd13a3429cbcfdecd04a50d8048c09e98d69eeed015407693",
+    "bytes": 15464
+  },
+  {
+    "path": "spanwitness/static/samples/ATTRIBUTION.json",
+    "sha256": "7aba99486740bd395eaee762af5b1f6b1673f41f0bacc9256ee2d824f036678d",
+    "bytes": 1062
+  },
+  {
+    "path": "spanwitness/static/samples/field-crossing.jpg",
+    "sha256": "eba3eb692ae900d694a52d4546daf9b3a9d3c756fbfbc0112fca8a64590a47dd",
+    "bytes": 155335
+  },
+  {
+    "path": "spanwitness/static/samples/field-span.jpg",
+    "sha256": "e2a6ccac232ddca8ac44d1e6192d839fe2db0bb44fedf63e477d844c63eaf6b8",
+    "bytes": 66331
+  },
+  {
+    "path": "spanwitness/static/style.css",
+    "sha256": "c77478c02059cc047e136fd55dcb71dcb4d7d982d4c3ca468bfae2a8a9e0607b",
+    "bytes": 27464
+  },
+  {
+    "path": "spanwitness/store.py",
+    "sha256": "f07dbbbd3661e528f52751a65841bd4e3b1c7220194f6070cd5f3c30ab5b2969",
+    "bytes": 2600
+  },
+  {
+    "path": "spanwitness/template.yaml",
+    "sha256": "c3c4a25f8ec483704ff462f14598db67a617587f17270e216c47eb72b0b41fcd",
+    "bytes": 4263
+  },
+  {
+    "path": "spanwitness/tests/test_aws_contract.py",
+    "sha256": "36c2d536112d2d80c2515d2485815372a3d089a4eb0275e47ddb7f501f48c292",
+    "bytes": 3131
+  },
+  {
+    "path": "spanwitness/tests/test_history.py",
+    "sha256": "ef8d86aca5a64a1c886e88fd4c47ad99d7a42014d83cbb856195fcd8738a92d8",
+    "bytes": 7565
+  },
+  {
+    "path": "spanwitness/tests/test_workflow.py",
+    "sha256": "9ea64d24bd1679d6eba94ed58f22942bc62a4d4a01f6b6a4ff2e22c18454dd30",
+    "bytes": 7700
+  },
+  {
+    "path": "spanwitness/vision.py",
+    "sha256": "43606389a2c77c2994b67b9c7a37c5771ac7611a19d9ab5345cef2b9652fdd0a",
+    "bytes": 18128
+  },
+  {
+    "path": "spanwitness/weather.py",
+    "sha256": "b8b5947425d8741f110509e7adcbb0fc3e415e6a700c4c2334fdeb89ac1998ef",
+    "bytes": 1889
+  },
+  {
+    "path": "README.md",
+    "sha256": "20af8ed4a70a150e79c4e9e3c9a439521a97987b3b274d826592922f75d5d555",
+    "bytes": 232
+  }
+]

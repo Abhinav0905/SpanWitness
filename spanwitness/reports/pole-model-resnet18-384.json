@@ -1,0 +1,3870 @@
+{
+  "generated_at": "2026-10-26T03:06:01.269554+00:00",
+  "configuration": {
+    "seed": 42,
+    "epochs": 8,
+    "frozen_epochs": 2,
+    "batch_size": 32,
+    "head_lr": 0.001,
+    "fine_tune_lr": 0.00015,
+    "weight_decay": 0.0001,
+    "abstain_below": 0.65,
+    "input": "whole-image letterbox; RGB ImageNet normalization",
+    "class_order": [
+      "Leaned",
+      "Rejected",
+      "Straight"
+    ],
+    "architecture": "resnet18",
+    "side": 384
+  },
+  "device": "mps",
+  "torch": "2.14.1",
+  "opencv": "5.0.0",
+  "dataset_revision": "b9c64b2f9615ef5ade71fceade7d9d31b0dc9416",
+  "train_count": 1706,
+  "validation_count": 341,
+  "validation_duplicates_excluded": 0,
+  "test_evaluated": false,
+  "model_sha256": "92d8bce491bef5ebf1ff08fe354a78c7e104d97efcb9c1ea500d459abf2d38ff",
+  "onnx_max_logit_error": 2.384185791015625e-06,
+  "validation": {
+    "accuracy": 0.7478,
+    "macro_f1": 0.6925,
+    "confusion_matrix": [
+      [
+        41,
+        4,
+        48
+      ],
+      [
+        2,
+        36,
+        19
+      ],
+      [
+        2,
+        11,
+        178
+      ]
+    ],
+    "classes": {
+      "Leaned": {
+        "precision": 0.9111,
+        "recall": 0.4409,
+        "f1": 0.5942,
+        "count": 93
+      },
+      "Rejected": {
+        "precision": 0.7059,
+        "recall": 0.6316,
+        "f1": 0.6667,
+        "count": 57
+      },
+      "Straight": {
+        "precision": 0.7265,
+        "recall": 0.9319,
+        "f1": 0.8165,
+        "count": 191
+      }
+    },
+    "coverage_at_065": 0.9267,
+    "usable_assessment_coverage": 0.7977,
+    "covered_accuracy": 0.769
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "seconds": 18.5,
+      "train_loss": 1.0763,
+      "accuracy": 0.6041,
+      "macro_f1": 0.4697,
+      "confusion_matrix": [
+        [
+          42,
+          4,
+          47
+        ],
+        [
+          20,
+          8,
+          29
+        ],
+        [
+          32,
+          3,
+          156
+        ]
+      ],
+      "classes": {
+        "Leaned": {
+          "precision": 0.4468,
+          "recall": 0.4516,
+          "f1": 0.4492,
+          "count": 93
+        },
+        "Rejected": {
+          "precision": 0.5333,
+          "recall": 0.1404,
+          "f1": 0.2222,
+          "count": 57
+        },
+        "Straight": {
+          "precision": 0.6724,
+          "recall": 0.8168,
+          "f1": 0.7376,
+          "count": 191
+        }
+      },
+      "coverage_at_065": 0.0147,
+      "usable_assessment_coverage": 0.0147,
+      "covered_accuracy": 0.8
+    },
+    {
+      "epoch": 2,
+      "seconds": 17.1,
+      "train_loss": 0.9945,
+      "accuracy": 0.563,
+      "macro_f1": 0.5489,
+      "confusion_matrix": [
+        [
+          68,
+          1,
+          24
+        ],
+        [
+          24,
+          24,
+          9
+        ],
+        [
+          80,
+          11,
+          100
+        ]
+      ],
+      "classes": {
+        "Leaned": {
+          "precision": 0.3953,
+          "recall": 0.7312,
+          "f1": 0.5132,
+          "count": 93
+        },
+        "Rejected": {
+          "precision": 0.6667,
+          "recall": 0.4211,
+          "f1": 0.5161,
+          "count": 57
+        },
+        "Straight": {
+          "precision": 0.7519,
+          "recall": 0.5236,
+          "f1": 0.6173,
+          "count": 191
+        }
+      },
+      "coverage_at_065": 0.0293,
+      "usable_assessment_coverage": 0.0264,
+      "covered_accuracy": 0.9
+    },
+    {
+      "epoch": 3,
+      "seconds": 45.4,
+      "train_loss": 0.8932,
+      "accuracy": 0.7126,
+      "macro_f1": 0.6398,
+      "confusion_matrix": [
+        [
+          32,
+          3,
+          58
+        ],
+        [
+          1,
+          32,
+          24
+        ],
+        [
+          2,
+          10,
+          179
+        ]
+      ],
+      "classes": {
+        "Leaned": {
+          "precision": 0.9143,
+          "recall": 0.3441,
+          "f1": 0.5,
+          "count": 93
+        },
+        "Rejected": {
+          "precision": 0.7111,
+          "recall": 0.5614,
+          "f1": 0.6275,
+          "count": 57
+        },
+        "Straight": {
+          "precision": 0.6858,
+          "recall": 0.9372,
+          "f1": 0.792,
+          "count": 191
+        }
+      },
+      "coverage_at_065": 0.7859,
+      "usable_assessment_coverage": 0.6862,
+      "covered_accuracy": 0.7649
+    },
+    {
+      "epoch": 4,
+      "seconds": 42.4,
+      "train_loss": 0.5317,
+      "accuracy": 0.7067,
+      "macro_f1": 0.666,
+      "confusion_matrix": [
+        [
+          59,
+          3,
+          31
+        ],
+        [
+          9,
+          34,
+          14
+        ],
+        [
+          14,
+          29,
+          148
+        ]
+      ],
+      "classes": {
+        "Leaned": {
+          "precision": 0.7195,
+          "recall": 0.6344,
+          "f1": 0.6743,
+          "count": 93
+        },
+        "Rejected": {
+          "precision": 0.5152,
+          "recall": 0.5965,
+          "f1": 0.5528,
+          "count": 57
+        },
+        "Straight": {
+          "precision": 0.7668,
+          "recall": 0.7749,
+          "f1": 0.7708,
+          "count": 191
+        }
+      },
+      "coverage_at_065": 0.6833,
+      "usable_assessment_coverage": 0.566,
+      "covered_accuracy": 0.7811
+    },
+    {
+      "epoch": 5,
+      "seconds": 45.0,
+      "train_loss": 0.3403,
+      "accuracy": 0.6921,
+      "macro_f1": 0.6735,
+      "confusion_matrix": [
+        [
+          69,
+          5,
+          19
+        ],
+        [
+          6,
+          39,
+          12
+        ],
+        [
+          38,
+          25,
+          128
+        ]
+      ],
+      "classes": {
+        "Leaned": {
+          "precision": 0.6106,
+          "recall": 0.7419,
+          "f1": 0.6699,
+          "count": 93
+        },
+        "Rejected": {
+          "precision": 0.5652,
+          "recall": 0.6842,
+          "f1": 0.619,
+          "count": 57
+        },
+        "Straight": {
+          "precision": 0.805,
+          "recall": 0.6702,
+          "f1": 0.7314,
+          "count": 191
+        }
+      },
+      "coverage_at_065": 0.7683,
+      "usable_assessment_coverage": 0.5982,
+      "covered_accuracy": 0.7405
+    },
+    {
+      "epoch": 6,
+      "seconds": 53.4,
+      "train_loss": 0.2407,
+      "accuracy": 0.651,
+      "macro_f1": 0.641,
+      "confusion_matrix": [
+        [
+          78,
+          9,
+          6
+        ],
+        [
+          7,
+          43,
+          7
+        ],
+        [
+          49,
+          41,
+          101
+        ]
+      ],
+      "classes": {
+        "Leaned": {
+          "precision": 0.5821,
+          "recall": 0.8387,
+          "f1": 0.6872,
+          "count": 93
+        },
+        "Rejected": {
+          "precision": 0.4624,
+          "recall": 0.7544,
+          "f1": 0.5733,
+          "count": 57
+        },
+        "Straight": {
+          "precision": 0.886,
+          "recall": 0.5288,
+          "f1": 0.6623,
+          "count": 191
+        }
+      },
+      "coverage_at_065": 0.7243,
+      "usable_assessment_coverage": 0.5279,
+      "covered_accuracy": 0.7206
+    },
+    {
+      "epoch": 7,
+      "seconds": 50.2,
+      "train_loss": 0.1925,
+      "accuracy": 0.6598,
+      "macro_f1": 0.6465,
+      "confusion_matrix": [
+        [
+          64,
+          4,
+          25
+        ],
+        [
+          7,
+          41,
+          9
+        ],
+        [
+          40,
+          31,
+          120
+        ]
+      ],
+      "classes": {
+        "Leaned": {
+          "precision": 0.5766,
+          "recall": 0.6882,
+          "f1": 0.6275,
+          "count": 93
+        },
+        "Rejected": {
+          "precision": 0.5395,
+          "recall": 0.7193,
+          "f1": 0.6165,
+          "count": 57
+        },
+        "Straight": {
+          "precision": 0.7792,
+          "recall": 0.6283,
+          "f1": 0.6957,
+          "count": 191
+        }
+      },
+      "coverage_at_065": 0.7977,
+      "usable_assessment_coverage": 0.6188,
+      "covered_accuracy": 0.739
+    },
+    {
+      "epoch": 8,
+      "seconds": 50.1,
+      "train_loss": 0.1265,
+      "accuracy": 0.7478,
+      "macro_f1": 0.6925,
+      "confusion_matrix": [
+        [
+          41,
+          4,
+          48
+        ],
+        [
+          2,
+          36,
+          19
+        ],
+        [
+          2,
+          11,
+          178
+        ]
+      ],
+      "classes": {
+        "Leaned": {
+          "precision": 0.9111,
+          "recall": 0.4409,
+          "f1": 0.5942,
+          "count": 93
+        },
+        "Rejected": {
+          "precision": 0.7059,
+          "recall": 0.6316,
+          "f1": 0.6667,
+          "count": 57
+        },
+        "Straight": {
+          "precision": 0.7265,
+          "recall": 0.9319,
+          "f1": 0.8165,
+          "count": 191
+        }
+      },
+      "coverage_at_065": 0.9267,
+      "usable_assessment_coverage": 0.7977,
+      "covered_accuracy": 0.769
+    }
+  ],
+  "predictions": [
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1015.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -2.7892119884490967,
+        0.7728614211082458,
+        2.443493366241455
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1019.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.764350414276123,
+        -2.9823715686798096,
+        3.639906167984009
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1029.jpg",
+      "actual": "Leaned",
+      "predicted": "Rejected",
+      "logits": [
+        -2.7549242973327637,
+        2.0920565128326416,
+        0.6855282187461853
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1054.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -3.635012626647949,
+        -1.9405242204666138,
+        6.259456634521484
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/110.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.7962590456008911,
+        -4.1255669593811035,
+        4.56171989440918
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1130.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.3678170442581177,
+        -3.355498790740967,
+        2.859369993209839
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1202.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.387440800666809,
+        -4.0818095207214355,
+        5.419538974761963
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1248.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.240179181098938,
+        -0.13893018662929535,
+        1.9593210220336914
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1256.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -2.7526347637176514,
+        0.6296679973602295,
+        2.6601665019989014
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1295.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -2.8001654148101807,
+        -0.9145642518997192,
+        3.8348255157470703
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1308.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -2.038367509841919,
+        -1.9921846389770508,
+        4.659468650817871
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/132.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        0.5436272621154785,
+        -4.368628025054932,
+        4.104167461395264
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1332.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.3179868459701538,
+        -1.8930927515029907,
+        3.6192123889923096
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1356.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.936621904373169,
+        -2.7358245849609375,
+        5.239419937133789
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1414.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        0.21757978200912476,
+        -3.545400381088257,
+        3.4828710556030273
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1486.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.45717179775238037,
+        -0.4883204698562622,
+        0.9703846573829651
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1525.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        2.323155403137207,
+        -5.581284999847412,
+        2.9046390056610107
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/156.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.9865719079971313,
+        -1.4979966878890991,
+        4.296627044677734
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1652.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.6395206451416016,
+        -2.212385654449463,
+        -1.6806138753890991
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1658.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.75795578956604,
+        -1.3815367221832275,
+        -1.2606019973754883
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1679.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        4.535304546356201,
+        -3.2062087059020996,
+        -2.8881709575653076
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1699.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        3.5980536937713623,
+        -3.886167049407959,
+        -1.0875413417816162
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1729.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        5.169707298278809,
+        -4.568690299987793,
+        -2.2701683044433594
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1740.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        5.378833770751953,
+        -5.299476623535156,
+        -1.7235232591629028
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1759.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.888069748878479,
+        -3.4693872928619385,
+        1.3171842098236084
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1785.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        0.7515815496444702,
+        0.10934491455554962,
+        -1.6971925497055054
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1790.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        3.2814557552337646,
+        -2.997673511505127,
+        -1.5631046295166016
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1791.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        0.12623903155326843,
+        -0.3571435213088989,
+        -0.8626856207847595
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1792.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.7301132678985596,
+        -2.915166139602661,
+        -1.5965628623962402
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1797.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        3.723890542984009,
+        -3.6121490001678467,
+        -1.6123034954071045
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1803.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.4960707426071167,
+        -1.5155274868011475,
+        -1.230858564376831
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1810.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.504141092300415,
+        -2.732450008392334,
+        -1.2731283903121948
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1814.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.2183643579483032,
+        -0.6297683119773865,
+        -1.2683824300765991
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1820.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        0.6247344017028809,
+        -5.81765604019165,
+        4.208139896392822
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1829.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.61190664768219,
+        -3.901634931564331,
+        0.9918044209480286
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1847.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        0.25300320982933044,
+        -5.716325283050537,
+        4.431220054626465
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1856.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        3.809917449951172,
+        -3.3668484687805176,
+        -1.9974483251571655
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1864.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.5942866802215576,
+        -3.4244160652160645,
+        0.6529926657676697
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1867.jpg",
+      "actual": "Leaned",
+      "predicted": "Rejected",
+      "logits": [
+        0.08196849375963211,
+        0.22471684217453003,
+        -1.5292943716049194
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1870.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.366942286491394,
+        -0.21563820540905,
+        -1.8666493892669678
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1882.jpg",
+      "actual": "Leaned",
+      "predicted": "Rejected",
+      "logits": [
+        0.2806428074836731,
+        2.4777374267578125,
+        -3.260751724243164
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1936.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        5.027447700500488,
+        -3.247645616531372,
+        -3.4365439414978027
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1944.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        3.051162004470825,
+        -2.4076461791992188,
+        -1.8465168476104736
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1957.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.3559679985046387,
+        -1.7022349834442139,
+        -1.5823317766189575
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1959.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        1.9429751634597778,
+        -4.784709453582764,
+        2.3585779666900635
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1966.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.7085540294647217,
+        -5.571633338928223,
+        1.7103732824325562
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1969.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.6096138954162598,
+        -1.8312568664550781,
+        -2.0633482933044434
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1988.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        3.489516258239746,
+        -2.960388660430908,
+        -1.8352043628692627
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/1993.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        3.2647342681884766,
+        -3.7138049602508545,
+        -0.7412857413291931
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2003.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.043030429631471634,
+        -0.984821617603302,
+        0.2214677929878235
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2018.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.005310535430908,
+        -2.3045296669006348,
+        -1.0249296426773071
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2039.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.7132327556610107,
+        -4.358302116394043,
+        1.2542071342468262
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2059.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        3.583606004714966,
+        -2.0315327644348145,
+        -2.4064807891845703
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2065.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.235348701477051,
+        -1.462669014930725,
+        -1.9208742380142212
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2089.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        4.213161468505859,
+        -3.9654433727264404,
+        -1.8075473308563232
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2090.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        1.1563247442245483,
+        -7.223518371582031,
+        5.514299392700195
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2093.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        5.596953868865967,
+        -5.600322246551514,
+        -1.7310713529586792
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2145.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        0.5121018290519714,
+        -5.233497142791748,
+        4.17344331741333
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2151.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.11071839928627014,
+        -4.568711757659912,
+        4.560307502746582
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2198.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.031479254364967346,
+        -1.4857162237167358,
+        1.7763547897338867
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2211.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.902143120765686,
+        -4.001938343048096,
+        0.8657543659210205
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2224.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.485369324684143,
+        -1.730971097946167,
+        3.191270589828491
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2275.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.8078765869140625,
+        -3.7794487476348877,
+        0.93096524477005
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2295.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.7375646233558655,
+        -1.217840552330017,
+        1.5712419748306274
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2297.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        4.770478248596191,
+        -3.5268523693084717,
+        -2.968362331390381
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2298.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        3.2763521671295166,
+        -5.42575740814209,
+        0.9629340171813965
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2304.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        0.8371720314025879,
+        -3.425616979598999,
+        2.4775662422180176
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2309.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.0471488237380981,
+        -1.811875581741333,
+        0.09621476382017136
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2314.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        0.09027844667434692,
+        -1.440748929977417,
+        0.7940058708190918
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2353.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.413960576057434,
+        -2.430295944213867,
+        -0.2651382386684418
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2355.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.3692798614501953,
+        -2.2602860927581787,
+        -1.5460805892944336
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2417.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        1.2362725734710693,
+        -1.0837796926498413,
+        -0.5260722041130066
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/2435.jpg",
+      "actual": "Leaned",
+      "predicted": "Rejected",
+      "logits": [
+        -1.1238068342208862,
+        1.1567566394805908,
+        -0.10584576427936554
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/280.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -3.521878957748413,
+        -1.3460019826889038,
+        5.472043991088867
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/294.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.8742055892944336,
+        -1.6772868633270264,
+        4.2708258628845215
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/357.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.8185609579086304,
+        -1.690732479095459,
+        3.2689476013183594
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/36.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.8802491426467896,
+        -4.30941915512085,
+        5.881650924682617
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/422.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.7428417205810547,
+        0.24662941694259644,
+        1.3214620351791382
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/443.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.182187557220459,
+        -1.646045207977295,
+        2.5804944038391113
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/475.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.14245536923408508,
+        -1.1950637102127075,
+        1.0185743570327759
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/560.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.69868004322052,
+        -0.9756783843040466,
+        3.1948740482330322
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/564.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.9445050954818726,
+        -0.40624764561653137,
+        2.848970413208008
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/575.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.548393964767456,
+        -0.33799877762794495,
+        1.9534162282943726
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/670.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.7006888389587402,
+        -2.003016471862793,
+        3.0153117179870605
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/697.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.40841156244277954,
+        -1.9069904088974,
+        2.0934720039367676
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/709.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        0.12962396442890167,
+        -3.6049795150756836,
+        3.4811606407165527
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/713.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -2.3782589435577393,
+        -0.11509404331445694,
+        2.025805950164795
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/762.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.0340372323989868,
+        -1.9438703060150146,
+        3.0398871898651123
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/763.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.3806096315383911,
+        -0.7464572787284851,
+        2.295041084289551
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/844.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -1.131151556968689,
+        -0.45865756273269653,
+        1.536452054977417
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/92.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        0.3319252133369446,
+        -3.9313361644744873,
+        3.4198763370513916
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/968.jpg",
+      "actual": "Leaned",
+      "predicted": "Straight",
+      "logits": [
+        -0.5087818503379822,
+        -1.2861050367355347,
+        1.0643126964569092
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Leaned/993.jpg",
+      "actual": "Leaned",
+      "predicted": "Leaned",
+      "logits": [
+        2.207894802093506,
+        -3.9829530715942383,
+        0.6624062657356262
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1240.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -2.603738784790039,
+        2.731475353240967,
+        0.36670956015586853
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1252.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -4.242532253265381,
+        3.8462517261505127,
+        0.9410320520401001
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1282.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -3.8541665077209473,
+        1.8490616083145142,
+        2.652106285095215
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1284.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -2.1575589179992676,
+        1.2318730354309082,
+        1.0821927785873413
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1285.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -2.503880023956299,
+        -0.555247962474823,
+        2.9601027965545654
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1367.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -3.2878224849700928,
+        5.401582717895508,
+        -1.9935400485992432
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1368.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -5.190944671630859,
+        7.873864650726318,
+        -2.4270823001861572
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1377.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -1.8986177444458008,
+        1.33437180519104,
+        0.3544403910636902
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1446.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -1.6161993741989136,
+        1.0523837804794312,
+        1.1085755825042725
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1463.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -2.556061029434204,
+        2.4707119464874268,
+        0.14466197788715363
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1504.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -3.5369815826416016,
+        6.2047224044799805,
+        -3.0984432697296143
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1507.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -1.867796778678894,
+        2.8493099212646484,
+        -1.9358514547348022
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1526.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -1.4359853267669678,
+        0.6246758103370667,
+        0.9943050742149353
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1533.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -0.8257682919502258,
+        1.290202260017395,
+        -0.5309778451919556
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1535.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -4.440174102783203,
+        4.823054313659668,
+        -0.45735782384872437
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1546.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -2.866393566131592,
+        -0.4463330805301666,
+        3.3280222415924072
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1551.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -3.565525770187378,
+        4.67839241027832,
+        -1.3361222743988037
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1565.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -3.3877861499786377,
+        5.777872562408447,
+        -3.15893816947937
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1576.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -4.0328898429870605,
+        3.8427114486694336,
+        -0.5319038033485413
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1588.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -1.7507243156433105,
+        1.4197324514389038,
+        -0.19776740670204163
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1600.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -3.615863800048828,
+        7.824268817901611,
+        -4.5642476081848145
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1617.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -1.3545724153518677,
+        1.708064079284668,
+        -0.5624156594276428
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1680.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -2.6398212909698486,
+        4.916939735412598,
+        -3.0499022006988525
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1721.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -2.1653687953948975,
+        3.5084822177886963,
+        -1.0836118459701538
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1724.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        0.12267785519361496,
+        1.0285223722457886,
+        -1.6983940601348877
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1731.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -0.9053612947463989,
+        1.2667131423950195,
+        -0.8256902694702148
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1760.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -1.2785060405731201,
+        0.021925630047917366,
+        1.112646460533142
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1773.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -2.180100917816162,
+        3.7254581451416016,
+        -1.3666961193084717
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1777.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -3.0678789615631104,
+        3.07637619972229,
+        0.28000178933143616
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1828.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -1.905968427658081,
+        0.4826098382472992,
+        1.5387139320373535
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1840.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -0.6332569122314453,
+        2.4240283966064453,
+        -3.041045665740967
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1850.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -3.2594246864318848,
+        3.3168933391571045,
+        0.07329476624727249
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1857.jpg",
+      "actual": "Rejected",
+      "predicted": "Leaned",
+      "logits": [
+        0.030382277444005013,
+        -1.0121122598648071,
+        -0.05878105014562607
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1876.jpg",
+      "actual": "Rejected",
+      "predicted": "Leaned",
+      "logits": [
+        1.4317376613616943,
+        -1.895126461982727,
+        0.18831941485404968
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/1927.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -1.5201464891433716,
+        2.6635494232177734,
+        -1.455981969833374
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/2000.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -1.5996586084365845,
+        4.7841057777404785,
+        -3.780261516571045
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/2007.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -4.63765811920166,
+        3.8871872425079346,
+        1.3619452714920044
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/2020.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -0.6207883358001709,
+        1.1868363618850708,
+        -1.4541243314743042
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/2330.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -1.124617576599121,
+        0.5754603743553162,
+        0.0936543345451355
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/2404.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        0.18890811502933502,
+        1.1772925853729248,
+        -1.6513553857803345
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/2424.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -3.046335220336914,
+        6.548676013946533,
+        -3.492967128753662
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/295.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -1.275532603263855,
+        -0.6529111862182617,
+        2.4841785430908203
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/364.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -3.50783371925354,
+        4.625203609466553,
+        -0.4386318624019623
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/37.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -3.7816107273101807,
+        0.5476495027542114,
+        4.240224361419678
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/383.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -5.452622413635254,
+        4.463663101196289,
+        1.4946882724761963
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/428.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -0.30883729457855225,
+        -2.842458963394165,
+        3.4295639991760254
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/461.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -0.5344523191452026,
+        -0.6806433200836182,
+        1.346584677696228
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/482.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -4.319964408874512,
+        5.366885185241699,
+        -0.46618756651878357
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/508.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -3.17342472076416,
+        -0.6934751868247986,
+        4.477845191955566
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/581.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -4.697269439697266,
+        -0.09360703825950623,
+        5.892250061035156
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/61.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -1.1318628787994385,
+        -1.8408668041229248,
+        2.7461555004119873
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/65.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -4.563961982727051,
+        1.481969952583313,
+        3.7123610973358154
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/685.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -3.484316349029541,
+        -0.5261759757995605,
+        4.894685745239258
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/695.jpg",
+      "actual": "Rejected",
+      "predicted": "Rejected",
+      "logits": [
+        -1.9764609336853027,
+        1.9747319221496582,
+        -0.057678576558828354
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/735.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -2.4874401092529297,
+        -1.1250231266021729,
+        3.7352216243743896
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/806.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -3.465033531188965,
+        0.952494204044342,
+        2.8898205757141113
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Rejected/809.jpg",
+      "actual": "Rejected",
+      "predicted": "Straight",
+      "logits": [
+        -1.3467375040054321,
+        -1.0743299722671509,
+        2.1641533374786377
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1001.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        1.2781438827514648,
+        -4.031907558441162,
+        2.1553447246551514
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1005.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.8210427165031433,
+        -2.390960216522217,
+        2.5221564769744873
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1007.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.16242265701293945,
+        -3.7038679122924805,
+        3.4998512268066406
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1012.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.892890691757202,
+        -0.7764459252357483,
+        3.575681447982788
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1017.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.3648468255996704,
+        -5.5065717697143555,
+        5.342016220092773
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/104.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.4497184753417969,
+        -2.6616811752319336,
+        3.9412121772766113
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1067.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.3991310596466064,
+        -1.858481764793396,
+        3.9519200325012207
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1076.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.15659578144550323,
+        -2.663580894470215,
+        3.07475209236145
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1088.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.8322598338127136,
+        -1.4909255504608154,
+        2.1464498043060303
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1098.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.624949038028717,
+        -4.253376007080078,
+        4.780165672302246
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1106.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.357517719268799,
+        -1.8694415092468262,
+        4.186674118041992
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1111.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.8373030424118042,
+        -1.3237513303756714,
+        3.0881145000457764
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1124.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.5024645328521729,
+        -3.1710903644561768,
+        5.659825325012207
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1125.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.7345885634422302,
+        -2.440624475479126,
+        2.9401843547821045
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1129.jpg",
+      "actual": "Straight",
+      "predicted": "Leaned",
+      "logits": [
+        1.458619236946106,
+        -3.2259416580200195,
+        1.417371153831482
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1134.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.43012717366218567,
+        -2.804690361022949,
+        3.152836799621582
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/114.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.4720889329910278,
+        -2.6714119911193848,
+        4.93084192276001
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1142.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.8811964988708496,
+        -0.40898239612579346,
+        3.4016737937927246
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/115.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.155259609222412,
+        -3.0389652252197266,
+        4.393167972564697
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1152.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.5875895023345947,
+        -2.272139310836792,
+        4.068463325500488
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1153.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.134025812149048,
+        -1.2121245861053467,
+        4.727076530456543
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1194.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.670822024345398,
+        -1.0311474800109863,
+        1.7018096446990967
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1209.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.474620819091797,
+        -1.2555662393569946,
+        3.878037929534912
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1217.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.2278498411178589,
+        -3.537950277328491,
+        5.018281936645508
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1225.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.725172996520996,
+        0.6940216422080994,
+        2.1164848804473877
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1233.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.8305119276046753,
+        -0.5992205142974854,
+        2.5939784049987793
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1234.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.19438853859901428,
+        -2.56941294670105,
+        2.74241042137146
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1249.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.743601083755493,
+        -0.8465514779090881,
+        5.983368396759033
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1255.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.4835357666015625,
+        -1.9271633625030518,
+        3.911778688430786
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1272.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.9449167251586914,
+        -0.7420806288719177,
+        1.5021883249282837
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1277.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.046097755432129,
+        -1.237870693206787,
+        3.3417105674743652
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1286.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.4741504192352295,
+        -1.5261448621749878,
+        5.0227370262146
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1296.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.1041921079158783,
+        -2.218259572982788,
+        1.9841841459274292
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/13.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.819758653640747,
+        -3.51467227935791,
+        7.162206172943115
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1306.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.10811629146337509,
+        -1.9848904609680176,
+        2.100174903869629
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1307.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.9468284845352173,
+        -1.5384117364883423,
+        2.21647310256958
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1317.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -4.249295234680176,
+        0.5902277231216431,
+        4.674063205718994
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1327.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.4380240440368652,
+        -1.664262056350708,
+        4.181481838226318
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1334.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.1005325317382812,
+        -1.7652479410171509,
+        4.716931343078613
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1338.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.3056004047393799,
+        -3.532986640930176,
+        5.918237209320068
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1341.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.948223829269409,
+        -3.4432199001312256,
+        7.328050136566162
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/136.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.6248779296875,
+        0.13627491891384125,
+        2.6552884578704834
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1373.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.0969295501708984,
+        0.670545756816864,
+        1.5198534727096558
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1376.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.500551700592041,
+        -4.131223201751709,
+        3.73508882522583
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1381.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.27439913153648376,
+        -5.720571041107178,
+        5.526382923126221
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1395.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.9356045722961426,
+        1.905299186706543,
+        2.1472644805908203
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1417.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.0354514122009277,
+        -3.6824865341186523,
+        5.626830577850342
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1421.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -4.114628314971924,
+        2.8393630981445312,
+        1.5876398086547852
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1439.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.761437177658081,
+        -3.388021945953369,
+        6.025779724121094
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1453.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.0434393882751465,
+        -0.4862028956413269,
+        2.89656400680542
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1487.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -1.8758615255355835,
+        1.8801616430282593,
+        -0.2426847368478775
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1491.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.124268054962158,
+        -1.1039154529571533,
+        3.4847826957702637
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1497.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.1850814819335938,
+        -3.134319543838501,
+        4.484506130218506
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1530.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.4527840614318848,
+        -1.5332708358764648,
+        4.5184125900268555
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1553.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -2.7766504287719727,
+        2.200108766555786,
+        0.5361170768737793
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1572.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.462522029876709,
+        -0.610018253326416,
+        2.809459686279297
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1578.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -3.2939343452453613,
+        5.295870304107666,
+        -2.713667154312134
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1615.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -1.6411808729171753,
+        0.7825704216957092,
+        0.1478617638349533
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/162.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.712754011154175,
+        0.4818337559700012,
+        2.9381730556488037
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1623.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.067030429840088,
+        1.3971281051635742,
+        1.7595237493515015
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/166.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.8418331146240234,
+        -0.16544394195079803,
+        4.7007832527160645
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1662.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.463955879211426,
+        1.2296417951583862,
+        2.130619764328003
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1663.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.1263988018035889,
+        -3.5394935607910156,
+        4.018110275268555
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/174.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.9309143424034119,
+        -5.278049945831299,
+        6.668623447418213
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1753.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.3738727271556854,
+        -3.1597743034362793,
+        1.9679648876190186
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1756.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.8287930488586426,
+        -0.09269711375236511,
+        2.5503273010253906
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/176.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.1536465883255005,
+        -0.18843717873096466,
+        1.698438286781311
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/180.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -4.645278453826904,
+        0.5896830558776855,
+        4.988630771636963
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1822.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.8079153299331665,
+        -0.5882455110549927,
+        2.396066427230835
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1824.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.957000195980072,
+        -1.516943097114563,
+        2.235948085784912
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1830.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        1.636224627494812,
+        -4.949869632720947,
+        2.4527056217193604
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1866.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.0275511741638184,
+        -0.22639000415802002,
+        2.1519827842712402
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1889.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.00686776638031,
+        -2.3917815685272217,
+        4.014706134796143
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1958.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.564368963241577,
+        -0.6624447107315063,
+        3.187328815460205
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/1986.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.8479113578796387,
+        -1.411910891532898,
+        3.9850943088531494
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2005.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.6249475479125977,
+        -1.3452889919281006,
+        2.495426654815674
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/201.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.5067994594573975,
+        -0.7036005258560181,
+        2.486677408218384
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2037.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.965623378753662,
+        -1.866752028465271,
+        4.5973896980285645
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2055.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.1115658283233643,
+        -1.3851648569107056,
+        3.377092123031616
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2056.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.4011003971099854,
+        -1.0088822841644287,
+        3.719973564147949
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2058.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.7770776748657227,
+        -2.6559882164001465,
+        5.570700645446777
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/206.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -4.57281494140625,
+        0.3028988242149353,
+        4.834536552429199
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2077.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.8339073061943054,
+        -3.573390483856201,
+        1.5595247745513916
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2101.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.22539043426513672,
+        -4.52820348739624,
+        4.109785556793213
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2115.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.3304086923599243,
+        -3.4234743118286133,
+        4.060318946838379
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/213.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        1.4908620119094849,
+        -4.303354740142822,
+        2.364929676055908
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/215.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.509488105773926,
+        -1.6290154457092285,
+        3.9789066314697266
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2154.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.077680826187134,
+        -2.5332930088043213,
+        4.917209148406982
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2159.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.2840709686279297,
+        -5.886874675750732,
+        6.450486660003662
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2196.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.0198508501052856,
+        -2.677168607711792,
+        3.8300440311431885
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2207.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.50262713432312,
+        -1.201743721961975,
+        5.163477897644043
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2219.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.894482374191284,
+        -3.8916804790496826,
+        6.906771183013916
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2225.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.440436840057373,
+        -1.7803765535354614,
+        3.7610044479370117
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2226.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.7828601002693176,
+        -2.2069990634918213,
+        2.9226298332214355
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2227.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.467047095298767,
+        -0.8272033929824829,
+        2.0510244369506836
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2232.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.0511010885238647,
+        -5.165135383605957,
+        6.1604228019714355
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/225.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -5.097662925720215,
+        0.6918460130691528,
+        4.953306674957275
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2266.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.06964728981256485,
+        -3.390913724899292,
+        2.648872137069702
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2274.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.5879737734794617,
+        -0.931357741355896,
+        1.3816428184509277
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2277.jpg",
+      "actual": "Straight",
+      "predicted": "Leaned",
+      "logits": [
+        2.182734489440918,
+        -4.212625503540039,
+        1.4270769357681274
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/228.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.417757511138916,
+        -2.142657518386841,
+        5.023075580596924
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2305.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.0431153774261475,
+        -3.1228396892547607,
+        6.483293533325195
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/231.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.0062646865844727,
+        -3.920194625854492,
+        7.9441142082214355
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2357.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.09543351829051971,
+        -4.12099552154541,
+        3.5240426063537598
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2401.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.2134630680084229,
+        -2.9250195026397705,
+        4.259855270385742
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2416.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.759782314300537,
+        -2.0339839458465576,
+        5.865381240844727
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/242.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.5192830562591553,
+        0.35196223855018616,
+        3.5124268531799316
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2438.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.7539243698120117,
+        -2.0038933753967285,
+        6.504949569702148
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/244.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.250206708908081,
+        -3.400519847869873,
+        5.313399314880371
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/2443.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -1.5149633884429932,
+        1.7846786975860596,
+        -0.2881737947463989
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/249.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.370368480682373,
+        -0.7366903424263,
+        4.075460433959961
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/272.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.813842535018921,
+        -1.0833945274353027,
+        4.203701496124268
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/281.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -4.60837984085083,
+        0.9235274195671082,
+        4.9365410804748535
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/290.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.217562675476074,
+        -0.8134900331497192,
+        3.019895553588867
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/291.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.225977659225464,
+        -2.946723461151123,
+        6.437529563903809
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/293.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.8353074789047241,
+        -2.8542449474334717,
+        3.9332051277160645
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/296.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.955155611038208,
+        -0.48783883452415466,
+        3.8753247261047363
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/310.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.148754119873047,
+        0.26458337903022766,
+        2.9442925453186035
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/352.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.912634015083313,
+        -1.2265995740890503,
+        3.3676419258117676
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/361.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.7220125198364258,
+        0.010360946878790855,
+        2.369791030883789
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/368.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.9114236235618591,
+        -3.6172947883605957,
+        4.215242385864258
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/374.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.143080472946167,
+        -1.3700472116470337,
+        4.363626003265381
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/375.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.34056782722473145,
+        -1.2963573932647705,
+        1.2488456964492798
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/381.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.33386051654815674,
+        -1.8277652263641357,
+        2.7905426025390625
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/39.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.5230499505996704,
+        -3.019937515258789,
+        3.295966148376465
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/40.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.6164674758911133,
+        -1.999405026435852,
+        2.6816177368164062
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/401.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.450356960296631,
+        0.06586166471242905,
+        2.11840558052063
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/409.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -4.749964714050293,
+        2.146913766860962,
+        4.008292198181152
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/419.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -5.028675079345703,
+        3.496260643005371,
+        2.817762851715088
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/423.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.0576345920562744,
+        -2.720679998397827,
+        3.593686819076538
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/435.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.861477792263031,
+        -3.140251874923706,
+        4.257522106170654
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/437.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.7536775469779968,
+        -2.873506546020508,
+        3.6203114986419678
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/439.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.396116018295288,
+        -4.188032150268555,
+        5.736217975616455
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/44.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.2291748523712158,
+        -1.1873607635498047,
+        3.0624494552612305
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/441.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.6865408420562744,
+        -2.7190909385681152,
+        4.07531213760376
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/458.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.80400013923645,
+        -2.097163677215576,
+        5.31931209564209
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/459.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.8729565143585205,
+        -2.797757625579834,
+        5.072717189788818
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/5.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.13470607995986938,
+        -2.79592227935791,
+        2.219648838043213
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/516.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.439618468284607,
+        -1.055087924003601,
+        2.3896429538726807
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/532.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        1.0157815217971802,
+        -3.799329996109009,
+        2.4778847694396973
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/538.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.9013180136680603,
+        -4.2207183837890625,
+        5.195798873901367
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/542.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.047327995300293,
+        -1.1036347150802612,
+        4.639963626861572
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/547.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.618722677230835,
+        -4.204826831817627,
+        7.382876396179199
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/549.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.3733882904052734,
+        -1.5572937726974487,
+        3.7706010341644287
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/588.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.4396111965179443,
+        -1.183531641960144,
+        3.572760581970215
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/608.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.1255991458892822,
+        -1.866316318511963,
+        4.621234893798828
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/630.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.0029776096343994,
+        0.4971570372581482,
+        2.104694366455078
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/642.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.18961763381958,
+        -3.2276322841644287,
+        4.657469749450684
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/648.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.896282434463501,
+        -1.2098307609558105,
+        4.394043922424316
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/654.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -4.821867942810059,
+        3.79858136177063,
+        1.5370663404464722
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/660.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.0935568809509277,
+        -3.2569456100463867,
+        5.8150954246521
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/673.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.609941005706787,
+        1.2303005456924438,
+        1.9424686431884766
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/674.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.9546129703521729,
+        -1.2518032789230347,
+        2.348418951034546
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/68.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.5339667797088623,
+        -0.2925505042076111,
+        3.353860378265381
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/703.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.9815075397491455,
+        -0.8530897498130798,
+        1.6276466846466064
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/719.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.302174836397171,
+        -3.974120616912842,
+        4.653918743133545
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/73.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.606378436088562,
+        0.8543959856033325,
+        1.0841279029846191
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/746.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.7626970410346985,
+        -3.2978708744049072,
+        4.408850193023682
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/748.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -4.191046714782715,
+        2.5785574913024902,
+        2.0971972942352295
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/751.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.1696629524230957,
+        0.33476531505584717,
+        3.4730207920074463
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/752.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.1685585975646973,
+        -0.5847073793411255,
+        3.1143782138824463
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/756.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.847731828689575,
+        1.257311463356018,
+        1.4654617309570312
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/76.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -0.38446515798568726,
+        0.6334713697433472,
+        -0.575343668460846
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/760.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.3537631034851074,
+        -1.8322815895080566,
+        4.878939151763916
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/764.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.6163274049758911,
+        0.7488652467727661,
+        1.2670682668685913
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/767.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.6898491382598877,
+        -1.5297658443450928,
+        4.947340965270996
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/771.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.1415038108825684,
+        0.45893821120262146,
+        1.427079439163208
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/785.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.6393941640853882,
+        -1.2599228620529175,
+        3.5881011486053467
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/787.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.110701084136963,
+        -0.4542118310928345,
+        3.9264914989471436
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/797.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.7763912081718445,
+        -2.133014440536499,
+        3.552447557449341
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/81.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.885462999343872,
+        1.4768390655517578,
+        3.016547918319702
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/815.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.611204147338867,
+        -1.1497710943222046,
+        4.177800178527832
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/819.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.40945306420326233,
+        -4.631122589111328,
+        4.958897590637207
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/826.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.240746021270752,
+        -0.9426882863044739,
+        3.3024003505706787
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/827.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.3274308741092682,
+        -2.6865317821502686,
+        2.9590933322906494
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/834.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.0532896518707275,
+        -2.7120308876037598,
+        5.3136305809021
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/840.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.6698131561279297,
+        -0.11101474612951279,
+        4.777441024780273
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/841.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.564306378364563,
+        -2.668327808380127,
+        4.480303764343262
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/842.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.370190143585205,
+        0.36462467908859253,
+        3.561436891555786
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/845.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.04126395657658577,
+        -0.8981838822364807,
+        1.1987059116363525
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/853.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -3.8377742767333984,
+        -0.2738984525203705,
+        5.072588920593262
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/854.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.29719614982605,
+        -0.49873772263526917,
+        3.1429779529571533
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/86.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.116658926010132,
+        -0.8731587529182434,
+        3.671435832977295
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/865.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.7930736541748047,
+        -1.7077112197875977,
+        5.632763385772705
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/896.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.7283833622932434,
+        -0.7633244395256042,
+        1.5222764015197754
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/914.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.25262945890426636,
+        -4.03640079498291,
+        4.091371059417725
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/948.jpg",
+      "actual": "Straight",
+      "predicted": "Rejected",
+      "logits": [
+        -2.505950927734375,
+        1.3229888677597046,
+        1.1291581392288208
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/961.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -1.3668931722640991,
+        -3.8353023529052734,
+        4.8712263107299805
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/966.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        0.5728945732116699,
+        -4.3689446449279785,
+        2.982832908630371
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/972.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -0.37035608291625977,
+        -0.9641616940498352,
+        1.426620602607727
+      ]
+    },
+    {
+      "path": "pole_lean_assessment/classification/val/Straight/985.jpg",
+      "actual": "Straight",
+      "predicted": "Straight",
+      "logits": [
+        -2.828295946121216,
+        -1.062412977218628,
+        4.065845489501953
+      ]
+    }
+  ],
+  "limits": [
+    "Validation selected the checkpoint; these are not held-out test scores.",
+    "Publisher image labels are not instrument measurements or certified asset severity.",
+    "Site-level overlap and geographic transfer remain unverified."
+  ]
+}

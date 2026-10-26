@@ -1,0 +1,140 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: SpanWitness OpenCV 5 inspection and evidence workflow
+Parameters:
+  PreviewAccessCode:
+    Type: String
+    NoEcho: true
+    MinLength: 16
+    Description: Private preview password. Browser username is judge.
+Resources:
+  InspectionLogs:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${AWS::StackName}-inspection'
+      RetentionInDays: 7
+  InspectionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: SpanWitnessEvidenceOnly
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [s3:GetObject, s3:PutObject]
+                Resource: !Sub '${EvidenceBucket.Arn}/images/*'
+              - Effect: Allow
+                Action: [dynamodb:GetItem, dynamodb:PutItem, dynamodb:Query]
+                Resource:
+                  - !GetAtt EvidenceTable.Arn
+                  - !Sub '${EvidenceTable.Arn}/index/kind-created'
+              - Effect: Allow
+                Action: [logs:CreateLogStream, logs:PutLogEvents]
+                Resource: !GetAtt InspectionLogs.Arn
+  InspectionApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      DefaultRouteSettings:
+        ThrottlingBurstLimit: 20
+        ThrottlingRateLimit: 10
+      RouteSettings:
+        'POST /api/analyze':
+          ThrottlingBurstLimit: 2
+          ThrottlingRateLimit: 1
+  EvidenceBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      LifecycleConfiguration:
+        Rules:
+          - Id: DemoEvidenceRetention
+            Status: Enabled
+            ExpirationInDays: 30
+  EvidenceTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: pk
+          AttributeType: S
+        - AttributeName: kind
+          AttributeType: S
+        - AttributeName: created
+          AttributeType: S
+      KeySchema:
+        - AttributeName: pk
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: kind-created
+          KeySchema:
+            - AttributeName: kind
+              KeyType: HASH
+            - AttributeName: created
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+  InspectionFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      Dockerfile: spanwitness/Dockerfile
+      DockerContext: ..
+      DockerTag: spanwitness-v1
+    Properties:
+      PackageType: Image
+      FunctionName: !Sub '${AWS::StackName}-inspection'
+      Role: !GetAtt InspectionRole.Arn
+      Architectures: [x86_64]
+      MemorySize: 2048
+      Timeout: 30
+      Environment:
+        Variables:
+          SPANWITNESS_BUCKET: !Ref EvidenceBucket
+          SPANWITNESS_TABLE: !Ref EvidenceTable
+          SPANWITNESS_ACCESS_CODE: !Ref PreviewAccessCode
+          SPANWITNESS_DATA: /tmp/spanwitness
+      Events:
+        Analyze:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref InspectionApi
+            Path: /api/analyze
+            Method: POST
+        Root:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref InspectionApi
+            Path: /
+            Method: ANY
+        Proxy:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref InspectionApi
+            Path: /{proxy+}
+            Method: ANY
+Outputs:
+  PreviewUrl:
+    Value: !Sub 'https://${InspectionApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}'
+  EvidenceBucketName:
+    Value: !Ref EvidenceBucket
+  EvidenceTableName:
+    Value: !Ref EvidenceTable

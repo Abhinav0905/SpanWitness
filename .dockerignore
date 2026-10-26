@@ -1,0 +1,10 @@
+.venv
+.tools-venv
+.ml-venv
+.git
+.pytest_cache
+**/__pycache__
+spanwitness/data
+spanwitness/artifacts
+.env
+.aws-sam

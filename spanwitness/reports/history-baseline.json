@@ -1,0 +1,82 @@
+{
+  "stage": "first development check before directional-edge and mutual-match revisions",
+  "cases": [
+    {
+      "case": "alignment-change",
+      "comparison": {
+        "method_version": "pole-history-v1",
+        "status": "change_detected",
+        "reason_code": null,
+        "inliers": 2280,
+        "matches": 2328,
+        "baseline_angle_deg": 0.22,
+        "current_angle_deg": 5.99,
+        "change_deg": 5.77,
+        "change_threshold_deg": 3.0,
+        "capture_setup": "operator_confirmed_repeatable_view",
+        "meaning": "Apparent 2D pole alignment relative to a selected reference. No physical lean, structural strength, fall date or fire probability is measured.",
+        "inlier_fraction": 0.979,
+        "background_coverage_fraction": 0.693,
+        "median_registration_error_px": 0.0,
+        "estimated_camera_rotation_deg": -0.0,
+        "projective_disagreement_fraction": 0.0,
+        "reference_alignment_error_px": 0.0,
+        "reason": "Apparent alignment change exceeds the declared 3-degree review threshold. Request a repeat capture and structural review."
+      }
+    },
+    {
+      "case": "camera-roll",
+      "comparison": {
+        "method_version": "pole-history-v1",
+        "status": "not_comparable",
+        "reason_code": "registration",
+        "inliers": 166,
+        "matches": 392,
+        "baseline_angle_deg": null,
+        "current_angle_deg": null,
+        "change_deg": null,
+        "change_threshold_deg": 3.0,
+        "capture_setup": "operator_confirmed_repeatable_view",
+        "meaning": "Apparent 2D pole alignment relative to a selected reference. No physical lean, structural strength, fall date or fire probability is measured.",
+        "inlier_fraction": 0.423,
+        "reason": "The views do not share enough consistent background matches."
+      }
+    },
+    {
+      "case": "perspective",
+      "comparison": {
+        "method_version": "pole-history-v1",
+        "status": "not_comparable",
+        "reason_code": "registration",
+        "inliers": 63,
+        "matches": 472,
+        "baseline_angle_deg": null,
+        "current_angle_deg": null,
+        "change_deg": null,
+        "change_threshold_deg": 3.0,
+        "capture_setup": "operator_confirmed_repeatable_view",
+        "meaning": "Apparent 2D pole alignment relative to a selected reference. No physical lean, structural strength, fall date or fire probability is measured.",
+        "inlier_fraction": 0.133,
+        "reason": "The views do not share enough consistent background matches."
+      }
+    },
+    {
+      "case": "blurred",
+      "comparison": {
+        "method_version": "pole-history-v1",
+        "status": "not_comparable",
+        "reason_code": "image_quality",
+        "inliers": 0,
+        "matches": 0,
+        "baseline_angle_deg": null,
+        "current_angle_deg": null,
+        "change_deg": null,
+        "change_threshold_deg": 3.0,
+        "capture_setup": "operator_confirmed_repeatable_view",
+        "meaning": "Apparent 2D pole alignment relative to a selected reference. No physical lean, structural strength, fall date or fire probability is measured.",
+        "reason": "One observation does not support a reliable image measurement. Capture a clearer view."
+      }
+    }
+  ],
+  "limits": "Four development fixtures; not a field benchmark."
+}

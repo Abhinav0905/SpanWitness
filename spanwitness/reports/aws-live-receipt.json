@@ -1,0 +1,136 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-26T03:25:25.717881+00:00",
+  "preview_url": "https://ec1f3mu6m7.execute-api.us-west-2.amazonaws.com",
+  "health": {
+    "status": "ok",
+    "app_version": "0.1.0",
+    "opencv": "5.0.0",
+    "storage": "aws_s3_dynamodb",
+    "dispatch": "review_queue_only",
+    "model": "classical_cv_with_bounded_policy"
+  },
+  "assets_sha256": {
+    "app.js": "c0589d6e872afb38d78594fee33c6de121c44a8c2f6453c7f513abda827ad75e",
+    "style.css": "7b32ddd27f2930de72b2b9fae87dd108d9506bdac611320ca6b20b48d3458e4d"
+  },
+  "observations": {
+    "gap": "f9d04f2d222644539a0bf4acf36d2302",
+    "first_view": "166419eb641c4339af166b84ff8db822",
+    "second_view": "9c3c6444c5174affb549cfd2abea6ff0"
+  },
+  "second_view_status": "projection_sensitive",
+  "checks": [
+    "unauthenticated request rejected",
+    "real OpenCV 5 on Lambda",
+    "S3 image and overlay readback",
+    "DynamoDB record readback",
+    "evidence export",
+    "measurement-driven second-view decision",
+    "frontend assets match tested source"
+  ],
+  "calls": [
+    {
+      "path": "/api/health",
+      "authenticated": false,
+      "status": 401
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "elapsed_ms": 42.0
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "elapsed_ms": 46.8
+    },
+    {
+      "path": "/static/app.js",
+      "status": 200,
+      "elapsed_ms": 36.7
+    },
+    {
+      "path": "/static/style.css",
+      "status": 200,
+      "elapsed_ms": 31.4
+    },
+    {
+      "path": "/api/examples",
+      "status": 200,
+      "elapsed_ms": 2218.9
+    },
+    {
+      "path": "/api/examples/gap/image",
+      "status": 200,
+      "elapsed_ms": 159.8
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 673.4
+    },
+    {
+      "path": "/api/observations/f9d04f2d222644539a0bf4acf36d2302/image",
+      "status": 200,
+      "elapsed_ms": 76.3
+    },
+    {
+      "path": "/api/observations/f9d04f2d222644539a0bf4acf36d2302/image?overlay=true",
+      "status": 200,
+      "elapsed_ms": 61.4
+    },
+    {
+      "path": "/api/observations/f9d04f2d222644539a0bf4acf36d2302/export",
+      "status": 200,
+      "elapsed_ms": 40.1
+    },
+    {
+      "path": "/api/examples/perspective/image?view=1",
+      "status": 200,
+      "elapsed_ms": 26.6
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 167.2
+    },
+    {
+      "path": "/api/examples/perspective/image?view=2",
+      "status": 200,
+      "elapsed_ms": 27.4
+    },
+    {
+      "path": "/api/analyze",
+      "status": 200,
+      "elapsed_ms": 643.0
+    },
+    {
+      "path": "/api/observations/9c3c6444c5174affb549cfd2abea6ff0",
+      "status": 200,
+      "elapsed_ms": 42.4
+    }
+  ],
+  "limits": "Synthetic workflow and hosted-browser verification. No field-accuracy score or controlled cold-start measurement.",
+  "browser_verification": {
+    "status": "passed",
+    "verified_at": "2026-10-26T03:27:01.931604+00:00",
+    "checks": [
+      "Chrome native Basic sign-in",
+      "first-view major review",
+      "second-view moderate review with 375 landmark inliers",
+      "human-confirmed DEMO ONLY review saved",
+      "demo review persisted after reload",
+      "demo review retained after app update",
+      "updated queue wording verified",
+      "archive text search returned two matching saved observations"
+    ]
+  },
+  "deployment": {
+    "stack_status": "UPDATE_COMPLETE",
+    "source_archive": "SpanWitness-22d1d393.zip",
+    "source_archive_sha256": "22d1d393f4a8b44a175b9dbc03cd34d5776516fe8843f7074a1d78a16aad7fde",
+    "source_manifest_sha256": "4d513318e09b89ec7ab8114184c17d3c3d7c30c38b3ddd1ddd3f1b75a5371a15",
+    "image_digest": "sha256:f51cb3e74ae01f70a18eaf17b83ba9908039ac6c107a15c2b77f1b51c15c77cb"
+  }
+}

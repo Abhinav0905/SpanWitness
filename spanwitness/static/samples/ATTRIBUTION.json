@@ -1,0 +1,24 @@
+[
+  {
+    "id": "field-crossing",
+    "file": "field-crossing.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Crossed_Wires_II_-_geograph.org.uk_-_566910.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Crossed_Wires_II_-_geograph.org.uk_-_566910.jpg",
+    "author": "Paul Harrop",
+    "title": "Crossed Wires II",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sha256": "eba3eb692ae900d694a52d4546daf9b3a9d3c756fbfbc0112fca8a64590a47dd"
+  },
+  {
+    "id": "field-span",
+    "file": "field-span.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Power_from_Afar_-_geograph.org.uk_-_657646.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Power_from_Afar_-_geograph.org.uk_-_657646.jpg",
+    "author": "Andy Beecroft",
+    "title": "Power from Afar",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sha256": "e2a6ccac232ddca8ac44d1e6192d839fe2db0bb44fedf63e477d844c63eaf6b8"
+  }
+]
